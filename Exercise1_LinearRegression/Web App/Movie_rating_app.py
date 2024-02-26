@@ -39,47 +39,66 @@ lm = load("Movie_rating_model.pkl")
 # import moduls
 import tkinter as tk
 import tkinter.ttk as ttk
+import os
+import random
 
 # create window
-window = tk.Tk()
-window.title("Movie rating")
-window.geometry("1200x900")
-window.configure(bg="black")
+root = tk.Tk()
+root.title("Movie rating")
+#root.geometry("1200x900")
+#root.configure(bg="black")
 
-# Function to update the positions of the pictures
-def update_positions():
-    # Update the position of each picture
-    for label in picture_labels:
-        x = random.randint(0, window_width - picture_width)
-        y = random.randint(0, window_height - picture_height)
-        label.place(x=x, y=y)
-
-    # Schedule the next update
-    window.after(2000, update_positions)  # Update positions every 2 seconds
+############################
 
 # Load images and get their dimensions
-image_files = ["image1.png", "image2.png", "image3.png"]  # List of image files
-pictures = [tk.PhotoImage(file=file) for file in image_files]
-picture_width = pictures[0].width()
-picture_height = pictures[0].height()
+# Assuming the images are in the same directory as your script
+script_dir = os.path.dirname(os.path.realpath(__file__))
+image_files = [os.path.join(script_dir, "image1.png"), os.path.join(script_dir, "image2.png")]
 
-# Create a list to store the Label widgets for pictures
-picture_labels = []
+# Define a Canvas widget
+canvas = canvas(win, width=600, height=400, bg="white")
+canvas.pack(pady=20)
 
-# Create and place Label widgets for each picture
-for picture in pictures:
-    label = tk.Label(root, image=picture)
-    label.place(x=random.randint(0, window_width - picture_width),
-                y=random.randint(0, window_height - picture_height))
-    picture_labels.append(label)
+# Add Images to Canvas widget
+image = ImageTk.PhotoImage(Image.open('favicon.ico'))
+img = canvas.create_image(250, 120, anchor=NW, image=image)
 
-# Schedule the initial update
-root.after(2000, update_positions)  # Update positions every 2 seconds
+def left(e):
+   x = -20
+   y = 0
+   canvas.move(img, x, y)
+
+def right(e):
+   x = 20
+   y = 0
+   canvas.move(img, x, y)
+
+def up(e):
+   x = 0
+   y = -20
+   canvas.move(img, x, y)
+
+def down(e):
+   x = 0
+   y = 20
+   canvas.move(img, x, y)
+
+# Bind the move function
+win.bind("<Left>", left)
+win.bind("<Right>", right)
+win.bind("<Up>", up)
+win.bind("<Down>", down)
 
 
 
 
 
+
+
+
+
+
+##########################
 
 # A widget used to display text on the screen
 text = tk.Label(
@@ -99,4 +118,4 @@ entry.pack()
 # listens for events, such as button clicks or keypresses,
 # and blocks any code that comes after it from running
 # until you close the window where you called the method.
-window.mainloop()
+root.mainloop()
