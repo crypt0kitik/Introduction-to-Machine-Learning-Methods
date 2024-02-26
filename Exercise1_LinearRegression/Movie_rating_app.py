@@ -1,4 +1,4 @@
-# PART
+# PART 1: needed imports and load the model
 
 import tkinter
 import pandas as pd
@@ -7,12 +7,6 @@ from joblib import load
 lm = load("Movie_rating_model.pkl")
 
 # PART 2: quickly test if the model file works correctly
-
-# this code is copy-pasted from the linear regression code
-
-# this is our separate test data candidate
-
-# let's try with some new imaginary data
 # let's try with some new imaginary data
 tester_row = {
     'Votes': 20000,
