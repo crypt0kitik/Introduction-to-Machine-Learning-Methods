@@ -45,9 +45,10 @@ import os
 import random
 from tkinter import *
 from PIL import ImageTk, Image
+import customtkinter
 
 # create a window
-window = tk.Tk()
+window = customtkinter.CTk()
 window.title("Movie rating")
 window.geometry("1200x900")
 
@@ -93,6 +94,8 @@ ent_first_name = tk.Entry(master=frm_form, width=50)
 lbl_first_name.grid(row=0, column=0, sticky="e")
 ent_first_name.grid(row=0, column=1)
 
+button = customtkinter.CTkButton(master=window, text="Check potential rating")
+button.place(relx=0.5, rely=0.3, anchor=CENTER)
 # and blocks any code that comes after it from running
 # until you close the window where you called the method.
 window.mainloop()
