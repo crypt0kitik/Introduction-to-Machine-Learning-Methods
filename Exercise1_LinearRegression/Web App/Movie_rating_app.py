@@ -46,25 +46,12 @@ import random
 from tkinter import *
 from PIL import ImageTk, Image
 
-
-
-# create window
+# create a window
 window = tk.Tk()
 window.title("Movie rating")
 window.geometry("1200x900")
 
-# A widget used to display text on the screen
-#text = tk.Label(
-   # text="Imagine that you want to make a famous movie \n but beforehand you want to see whether this movie will be famous",
-    #foreground="white",  # Set the text color to white
-   # font= ('Aerial', 17)
-    #background="black",  # Set the background color to black
-    #width = 10,
-    #height = 10
-#)
-#text.pack()
-
-# Load images for frames
+# Load background images for frames
 image1 = Image.open("image1.png")
 photo1 = ImageTk.PhotoImage(image1)
 
@@ -92,8 +79,10 @@ frame3.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
 background_label3 = tk.Label(frame3, image=photo3)
 background_label3.place(x=0, y=0, relwidth=1, relheight=1)
 
-label2 = tk.Label(master=window, text="I'm at (75, 75)")
-label2.place(x=75, y=75)
+# place text in front of pictures
+text_label = tk.Label(window, text="Imagine that you want to develop a movie, \n but beofre you want to know whether is a movie going to be popular", font=("Helvetica", 22), fg="black", bg="white")
+text_label.place(relx=0.5, rely=0.1, anchor="center")
+# Configure the label to have a transparent background
 
 # to run the Tkinter event loop. This method
 # listens for events, such as button clicks or keypresses,
