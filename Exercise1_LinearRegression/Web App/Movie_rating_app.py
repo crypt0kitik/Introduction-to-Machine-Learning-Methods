@@ -82,10 +82,17 @@ background_label3.place(x=0, y=0, relwidth=1, relheight=1)
 # place text in front of pictures
 text_label = tk.Label(window, text="Imagine that you want to develop a movie, \n but beofre you want to know whether is a movie going to be popular", font=("Helvetica", 22), fg="black", bg="white")
 text_label.place(relx=0.5, rely=0.1, anchor="center")
-# Configure the label to have a transparent background
 
-# to run the Tkinter event loop. This method
-# listens for events, such as button clicks or keypresses,
+# Create a new frame `frm_form` to contain the Label and Entry widgets
+frm_form = tk.Frame(relief=tk.SUNKEN, borderwidth=3)
+frm_form.place(relx=0.5, rely=0.2, anchor="center")
+
+# Create the Label and Entry widgets for "First Name"
+lbl_first_name = tk.Label(master=frm_form, text="In which year you want to publish your movie?")
+ent_first_name = tk.Entry(master=frm_form, width=50)
+lbl_first_name.grid(row=0, column=0, sticky="e")
+ent_first_name.grid(row=0, column=1)
+
 # and blocks any code that comes after it from running
 # until you close the window where you called the method.
 window.mainloop()
