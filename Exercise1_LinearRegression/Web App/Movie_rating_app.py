@@ -65,43 +65,33 @@ root.geometry("1200x900")
 #)
 #text.pack()
 
-
 # Load images for frames
-image_paths = ["image1.png", "image2.png", "image3.png"]
-photos = [None] * len(image_paths)
+image1 = Image.open("image1.png")
+photo1 = ImageTk.PhotoImage(image1)
 
-# loop all images
-for i, image_path in enumerate(image_paths):
-    image = Image.open(image_path)
-    # Resize the image to fit the dimensions of the corresponding frame
-    if i == 0:
-        image = image.resize((200, 100), Image.ANTIALIAS)
-    elif i == 1:
-        image = image.resize((100, 100), Image.ANTIALIAS)
-    elif i == 2:
-        image = image.resize((50, 100), Image.ANTIALIAS)
-    photos[i] = ImageTk.PhotoImage(image)
+image2 = Image.open("image2.png")
+photo2 = ImageTk.PhotoImage(image2)
 
-# Create frames with image backgrounds
-frames = []
-for i, photo in enumerate(photos):
-    frame = tk.Frame(master=root, width=(i+1)*50+150, height=100)
-    frame.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
-    background_label = tk.Label(frame, image=photo)
-    background_label.place(x=0, y=0, relwidth=1, relheight=1)
-    frames.append(frame)
+image3 = Image.open("image3.png")
+photo3 = ImageTk.PhotoImage(image3)
 
-def change_images():
-    global photos
-    for i, frame in enumerate(frames):
-        new_photo_index = (i + 1) % len(image_paths)
-        new_photo = photos[new_photo_index]
-        frame_background_label = frame.winfo_children()[0]  # Get the background label of the frame
-        frame_background_label.configure(image=new_photo)
-        frame_background_label.image = new_photo  # Keep a reference to avoid garbage collection
-    root.after(2000, change_images)
+# Frame 1 with image background
+frame1 = tk.Frame(master=root, width=200, height=100)
+frame1.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
+background_label1 = tk.Label(frame1, image=photo1)
+background_label1.place(x=0, y=0, relwidth=1, relheight=1)
 
-root.after(2000, change_images)  # Start changing images after 2 seconds
+# Frame 2 with image background
+frame2 = tk.Frame(master=root, width=100)
+frame2.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
+background_label2 = tk.Label(frame2, image=photo2)
+background_label2.place(x=0, y=0, relwidth=1, relheight=1)
+
+# Frame 3 with image background
+frame3 = tk.Frame(master=root, width=50)
+frame3.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
+background_label3 = tk.Label(frame3, image=photo3)
+background_label3.place(x=0, y=0, relwidth=1, relheight=1)
 
 ##########################
 
