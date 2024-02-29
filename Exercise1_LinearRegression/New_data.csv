@@ -1,0 +1,751 @@
+,Movie Name,Rating,Votes,Meta Score,Genre,PG Rating,Year,Duration,Cast,Director
+0, Madame Web,3.8,27000.0,26,"Action, Adventure, Sci-Fi",12A,2024,1h 56m,"Dakota Johnson, Sydney Sweeney, Isabela Merced, Celeste O'Connor",S.J. Clarkson
+1, Borderlands,NA,NA,NA,NA,NA,2024,1h 42m,NA,NA
+2, Dune: Part Two,9.1,13000.0,78,"Action, Adventure, Drama",12A,2024,2h 46m,"Timothée Chalamet, Zendaya, Rebecca Ferguson, Javier Bardem",Denis Villeneuve
+3, Bob Marley: One Love,6.5,10000.0,43,"Biography, Drama, Music",12A,2024,1h 47m,"Kingsley Ben-Adir, Lashana Lynch, James Norton, Tosin Cole",Reinaldo Marcus Green
+4, Land of Bad,6.5,7300.0,57,"Action, Thriller",15,2024,1h 53m,"Liam Hemsworth, Russell Crowe, Luke Hemsworth, Ricky Whittle",William Eubank
+5, Deadpool & Wolverine,NA,NA,NA,NA,NA,2024,NA,NA,NA
+6, Argylle,6.0,27000.0,35,"Action, Thriller",12A,2024,2h 19m,"Henry Cavill, Bryce Dallas Howard, Sam Rockwell, Bryan Cranston",Matthew Vaughn
+7, The Beekeeper,6.4,58000.0,54,"Action, Thriller",15,2024,1h 45m,"Jason Statham, Emmy Raver-Lampman, Bobby Naderi, Josh Hutcherson",David Ayer
+8, Miller's Girl,5.2,4900.0,41,"Comedy, Drama",15,2024,1h 33m,"Martin Freeman, Jenna Ortega, Bashir Salahuddin, Gideon Adlon",Jade Halley Bartlett
+9, Upgraded,6.1,12000.0,59,"Comedy, Romance",15,2024,1h 44m,"Camila Mendes, Archie Renaux, Marisa Tomei, Lena Olin",Carlson Young
+10, Drive-Away Dolls,6.1,3000.0,57,"Action, Comedy, Thriller",15,2024,1h 24m,"Margaret Qualley, Geraldine Viswanathan, Beanie Feldstein, Joey Slotnick",Ethan Coen
+11, Mean Girls,6.0,18000.0,58,"Comedy, Musical",12A,2024,1h 52m,"Angourie Rice, Reneé Rapp, Auli'i Cravalho, Jaquel Spivey",Samantha JayneArturo Perez Jr.
+12, This Is Me... Now,4.7,3300.0,59,"Music, Musical",12,2024,1h 5m,"Jennifer Lopez, Fat Joe, Jane Fonda, Ben Affleck",Dave Meyers
+13, Players,5.6,5900.0,52,"Comedy, Romance",15,2024,1h 45m,"Gina Rodriguez, Damon Wayans Jr., Tom Ellis, Augustus Prew",Trish Sie
+14, Godzilla x Kong: The New Empire,NA,NA,NA,NA,NA,2024,PG-13,NA,NA
+15, Irish Wish,NA,NA,NA,NA,NA,2024,1h 33m,NA,NA
+16, Lisa Frankenstein,6.4,5000.0,47,"Comedy, Horror, Romance",15,2024,1h 41m,"Kathryn Newton, Liza Soberano, Jenna Davis, Trina LaFargue",Zelda Williams
+17, No Way Up,4.5,2000.0,NA,NA,15,2024,1h 30m,NA,NA
+18, Joker: Folie à Deux,NA,NA,NA,NA,NA,2024,NA,NA,NA
+19, Civil War,NA,NA,NA,NA,R,2024,1h 49m,NA,NA
+20, Challengers,NA,NA,NA,NA,NA,2024,R,NA,NA
+21, The Fantastic Four,NA,NA,NA,NA,NA,2025,NA,NA,NA
+22, Wicked,NA,NA,NA,NA,NA,2024,NA,NA,NA
+23, Aquaman and the Lost Kingdom,5.7,61000.0,42,"Action, Adventure, Fantasy",12A,2023,2h 4m,"Jason Momoa, Patrick Wilson, Yahya Abdul-Mateen II, Amber Heard",James Wan
+24, Einstein and the Bomb,6.2,1900.0,NA,NA,TV-MA,2024,1h 16m,NA,NA
+25, Lights Out,4.9,581.0,NA,NA,15,2024,1h 30m,NA,NA
+26, Kingdom of the Planet of the Apes,NA,NA,NA,NA,NA,2024,NA,NA,NA
+27, Damsel,NA,NA,NA,NA,PG-13,2024,1h 48m,NA,NA
+28, Twisters,NA,NA,NA,NA,NA,2024,NA,NA,NA
+29, Orion and the Dark,6.4,9400.0,72,"Animation, Adventure, Comedy",PG,2024,1h 33m,"Jacob Tremblay, Paul Walter Hauser, Colin Hanks, Mia Akemi Brown",Sean Charmatz
+30, Ordinary Angels,7.9,731.0,58,Drama,PG,2024,1h 58m,"Hilary Swank, Alan Ritchson, Emily Mitchell, Skywalker Hughes",Jon Gunn
+31, Love Lies Bleeding,NA,NA,76,"Action, Adventure, Crime",15,2024,1h 44m,"Anna Baryshnikov, Kristen Stewart, Dave Franco, Katy O'Brian",Rose Glass
+32, Ghostbusters: Frozen Empire,NA,NA,NA,NA,PG-13,2024,2h 5m,NA,NA
+33," Lover, Stalker, Killer",7.0,6800.0,NA,NA,15,2024,1h 30m,NA,NA
+34, Gladiator 2,NA,NA,NA,NA,NA,2024,NA,NA,NA
+35, Beetlejuice 2,NA,NA,NA,NA,NA,2024,NA,NA,NA
+36, Mea Culpa,4.1,2700.0,35,"Crime, Drama, Thriller",18,2024,2h,"Kelly Rowland, Trevante Rhodes, Nick Sagar, Sean Sagar",Tyler Perry
+37, Red Right Hand,5.3,1100.0,48,"Action, Thriller",NA,2024,1h 51m,"Andie MacDowell, Orlando Bloom, Garret Dillahunt, Brian Geraghty",Eshom NelmsIan Nelms
+38, Superman: Legacy,NA,NA,NA,NA,NA,2025,NA,NA,NA
+39, Road House,NA,NA,NA,NA,R,2024,1h 54m,NA,NA
+40, Suncoast,6.6,3400.0,61,Drama,R,2024,1h 49m,"Nico Parker, Laura Linney, Woody Harrelson, Daniella Taylor",Laura Chinn
+41, Lift,5.5,34000.0,40,"Action, Comedy, Crime",12,2024,1h 47m,"Kevin Hart, Gugu Mbatha-Raw, Sam Worthington, Vincent D'Onofrio",F. Gary Gray
+42, A Quiet Place: Day One,NA,NA,NA,NA,NA,2024,NA,NA,NA
+43, Furiosa: A Mad Max Saga,NA,NA,NA,NA,NA,2024,NA,NA,NA
+44, Small Things Like These,7.2,210.0,82,"Drama, History",NA,2024,1h 36m,"Cillian Murphy, Clare Dunne, Ciarán Hinds, Emily Watson",Tim Mielants
+45, Air Force One Down,4.4,970.0,NA,NA,18,2024,1h 24m,NA,NA
+46, A Different Man,7.5,216.0,73,Thriller,NA,2024,1h 52m,"Sebastian Stan, Renate Reinsve, Adam Pearson, Miles G. Jackson",Aaron Schimberg
+47, Moana 2,NA,NA,NA,NA,NA,2024,NA,NA,NA
+48, Night Swim,4.7,12000.0,43,"Horror, Thriller",15,2024,1h 38m,"Wyatt Russell, Kerry Condon, Amélie Hoeferle, Gavin Warren",Bryce McGuire
+49, They Called Him Mostly Harmless,5.8,1500.0,NA,NA,NA,2024,1h 29m,NA,NA
+50, The Lord of the Rings: The War of the Rohirrim,NA,NA,NA,NA,NA,2024,2h 10m,NA,NA
+51, The Ministry of Ungentlemanly Warfare,NA,NA,NA,NA,NA,2024,2h,NA,NA
+52, Spaceman,6.1,217.0,57,"Adventure, Drama, Sci-Fi",15,2024,1h 47m,"Adam Sandler, Carey Mulligan, Paul Dano, Kunal Nayyar",Johan Renck
+53, Michael,NA,NA,NA,NA,NA,2025,NA,NA,NA
+54, Baghead,5.5,1200.0,NA,NA,15,2023,1h 34m,NA,NA
+55, Spider-Man: Beyond the Spider-Verse,NA,NA,NA,NA,NA,2024,NA,NA,NA
+56, Beautiful Wedding,3.9,605.0,NA,NA,R,2024,1h 40m,NA,NA
+57, Shirley,NA,NA,NA,NA,PG-13,2024,1h 57m,NA,NA
+58, Kraven the Hunter,NA,NA,NA,NA,NA,2024,NA,NA,NA
+59, Despicable Me 4,NA,NA,NA,NA,NA,2024,NA,NA,NA
+60, The Fall Guy,NA,NA,NA,NA,PG-13,2024,1h 54m,NA,NA
+61, Sting,NA,NA,NA,NA,R,2024,1h 31m,NA,NA
+62, The Tiger's Apprentice,5.7,1000.0,55,"Animation, Action, Adventure",PG,2024,1h 24m,"Henry Golding, Brandon Soo Hoo, Lucy Liu, Sandra Oh",Raman HuiYong Duk JhunPaul Watling
+63, Constantine 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+64, Imaginary,NA,NA,NA,NA,15,2024,1h 44m,NA,NA
+65, Bad Boys 4,NA,NA,NA,NA,NA,2024,NA,NA,NA
+66, BC Project,NA,NA,NA,NA,NA,NA,NA,NA,NA
+67, Nosferatu,NA,NA,NA,NA,NA,2024,NA,NA,NA
+68, Sonic the Hedgehog 3,NA,NA,NA,NA,NA,2024,NA,NA,NA
+69, Captain America: Brave New World,NA,NA,NA,NA,NA,2025,NA,NA,NA
+70, Alien: Romulus,NA,NA,NA,NA,NA,2024,NA,NA,NA
+71, Lethal Weapon 5,NA,NA,NA,NA,NA,NA,NA,NA,NA
+72, IF,NA,NA,NA,NA,NA,2024,NA,NA,NA
+73, Inside Out 2,NA,NA,NA,NA,NA,2024,NA,NA,NA
+74, Megalopolis,NA,NA,NA,NA,NA,NA,NA,NA,NA
+75, Role Play,5.5,13000.0,NA,NA,12,2024,1h 40m,NA,NA
+76, The Underdoggs,5.5,3300.0,39,"Comedy, Sport",15,2024,1h 36m,"Snoop Dogg, Tika Sumpter, Mike Epps, Elias Ferguson",Charles Stone III
+77, The Thundermans Return,NA,NA,NA,NA,NA,2024,NA,NA,NA
+78, Mission: Impossible - Dead Reckoning Part Two,NA,NA,NA,NA,NA,2025,NA,NA,NA
+79, Winnie-the-Pooh: Blood and Honey 2,NA,NA,NA,NA,18,2024,1h 40m,NA,NA
+80, The Crow,NA,NA,NA,NA,NA,2024,NA,NA,NA
+81, Abigail,NA,NA,NA,NA,R,2024,1h 30m,NA,NA
+82, The Greatest Night in Pop,8.0,8800.0,69,"Documentary, Music",12A,2024,1h 36m,"Lionel Richie, Harriet Sternberg, Wendy Rees, Harry Belafonte",Bao Nguyen
+83, Arthur the King,7.1,27.0,NA,NA,PG-13,2024,1h 30m,NA,NA
+84, Monkey Man,NA,NA,NA,NA,R,2024,1h 53m,NA,NA
+85, Sasquatch Sunset,6.6,113.0,68,"Action, Adventure, Comedy",R,2024,1h 29m,"Jesse Eisenberg, Riley Keough, Christophe Zajac-Denek, Nathan Zellner",David ZellnerNathan Zellner
+86, Cabrini,NA,NA,NA,NA,PG-13,2024,2h 25m,NA,NA
+87, Mufasa: The Lion King,NA,NA,NA,NA,NA,2024,NA,NA,NA
+88, The Sidemen Story,6.8,1500.0,NA,NA,15,2024,1h 39m,NA,NA
+89, Back to Black,NA,NA,NA,NA,NA,2024,NA,NA,NA
+90, The Batman Part II,NA,NA,NA,NA,NA,2025,NA,NA,NA
+91, American Star,5.4,1000.0,66,Thriller,15,2024,1h 47m,"Ian McShane, Nora Arnezeder, Oscar Coleman, Pedro Alberto Galindo",Gonzalo López-Gallego
+92, Ricky Stanicky,NA,NA,NA,NA,NA,2024,R,NA,NA
+93, Immaculate,NA,NA,NA,NA,R,2024,1h 29m,NA,NA
+94, Mortal Kombat 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+95, Five Blind Dates,4.9,647.0,NA,NA,12,2024,1h 23m,NA,NA
+96, Venom 3,NA,NA,NA,NA,NA,2024,NA,NA,NA
+97, Ballerina,NA,NA,NA,NA,NA,2025,NA,NA,NA
+98, Justice League: Crisis on Infinite Earths - Part One,6.3,3100.0,NA,NA,PG,2024,1h 33m,NA,NA
+99, The Last Girl,4.5,852.0,NA,NA,15,2024,1h 45m,NA,NA
+100, Transformers One,NA,NA,NA,NA,NA,2024,NA,NA,NA
+101, God & Country,4.2,304.0,NA,NA,PG-13,2024,1h 30m,NA,NA
+102, Bosco,5.6,2200.0,NA,NA,TV-MA,2024,1h 39m,NA,NA
+103, Good Grief,6.4,9000.0,59,"Comedy, Drama, Romance",15,2023,1h 40m,"Dan Levy, Ruth Negga, Himesh Patel, Luke Evans",Dan Levy
+104, Snack Shack,NA,NA,NA,NA,NA,2024,R,NA,NA
+105, Force of Nature: The Dry 2,6.6,522.0,NA,NA,R,2024,2h,NA,NA
+106, Giannis: The Marvelous Journey,8.5,519.0,NA,NA,15,2024,1h 49m,NA,NA
+107, Kinds of Kindness,NA,NA,NA,NA,NA,NA,NA,NA,NA
+108, Minecraft,NA,NA,NA,NA,NA,2025,NA,NA,NA
+109, Mickey 17,NA,NA,NA,NA,NA,2025,2h 19m,NA,NA
+110, Blade,NA,NA,NA,NA,NA,2025,NA,NA,NA
+111, Lola James,5.1,111.0,NA,NA,NA,2024,1h 24m,NA,NA
+112, Snow White,NA,NA,NA,NA,NA,2025,NA,NA,NA
+113, The First Omen,NA,NA,NA,NA,NA,2024,R,NA,NA
+114, Longlegs,NA,NA,NA,NA,R,2024,1h 41m,NA,NA
+115, Calamity Jane,4.2,413.0,NA,NA,NA,2024,1h 35m,NA,NA
+116, The Watchers,NA,NA,NA,NA,NA,2024,NA,NA,NA
+117, The Garfield Movie,NA,NA,NA,NA,NA,2024,NA,NA,NA
+118, Moana,NA,NA,NA,NA,NA,2025,NA,NA,NA
+119, French Girl,7.6,27.0,NA,NA,15,2024,1h 46m,NA,NA
+120, Beverly Hills Cop: Axel F,NA,NA,NA,NA,NA,2024,NA,NA,NA
+121, The American Society of Magical Negroes,NA,NA,54,"Comedy, Fantasy",PG-13,2024,1h 44m,"Justice Smith, Zachary Barton, Anthony Coons, Robbie Troy",Kobi Libii
+122, Cuckoo,5.9,143.0,55,"Horror, Mystery, Thriller",NA,2024,1h 42m,"Hunter Schafer, Dan Stevens, Jessica Henwick, Marton Csokas",Tilman Singer
+123, Juror #2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+124, Horizon: An American Saga - Chapter 1,NA,NA,NA,NA,NA,2024,R,NA,NA
+125, The Strangers: Chapter 1,NA,NA,NA,NA,NA,2024,NA,NA,NA
+126, Avengers: The Kang Dynasty,NA,NA,NA,NA,NA,2026,NA,NA,NA
+127, Lilo & Stitch,NA,NA,NA,NA,NA,U,NA,NA,NA
+128, The Movie Critic,NA,NA,NA,NA,NA,NA,NA,NA,NA
+129, How to Train Your Dragon,NA,NA,NA,NA,NA,2025,NA,NA,NA
+130, Race for Glory: Audi vs. Lancia,5.8,1800.0,51,"Biography, Drama, Sport",12,2024,1h 49m,"Haley Bennett, Daniel Brühl, Riccardo Scamarcio, Volker Bruch",Stefano Mordini
+131, Red One,NA,NA,NA,NA,NA,2024,1h 42m,NA,NA
+132, The Outrun,7.7,156.0,69,Drama,15,2024,1h 58m,"Saoirse Ronan, Saskia Reeves, Stephen Dillane, Lauren Lyle",Nora Fingscheidt
+133, MaXXXine,NA,NA,NA,NA,NA,NA,NA,NA,NA
+134, Mothers' Instinct,7.6,80.0,NA,NA,15,2024,1h 34m,NA,NA
+135, Fast X: Part 2,NA,NA,NA,NA,NA,2025,NA,NA,NA
+136, Drugstore June,8.1,29.0,NA,NA,NA,2024,1h 31m,NA,NA
+137, How to Date Billy Walsh,NA,NA,NA,NA,15,2024,1h 38m,NA,NA
+138, Wolfs,NA,NA,NA,NA,NA,2024,NA,NA,NA
+139, Salem's Lot,NA,NA,NA,NA,NA,1h 53m,R,NA,NA
+140, Someone Like You,NA,NA,NA,NA,PG,2024,1h 58m,NA,NA
+141, Jurassic World 4,NA,NA,NA,NA,NA,2025,NA,NA,NA
+142, Coyote vs. Acme,NA,NA,NA,NA,NA,1h 41m,PG,NA,NA
+143, The Conjuring: Last Rites,NA,NA,NA,NA,NA,NA,NA,NA,NA
+144, One More Shot,5.5,1600.0,NA,NA,R,2024,1h 43m,NA,NA
+145," Snoopy Presents: Welcome Home, Franklin",7.3,335.0,NA,NA,TV-G,2024,39m,NA,NA
+146, Rebel Moon - Part Two: The Scargiver,NA,NA,NA,NA,NA,2024,PG-13,NA,NA
+147, Frankenstein,NA,NA,NA,NA,NA,NA,NA,NA,NA
+148, Rust,NA,NA,NA,NA,NA,NA,NA,NA,NA
+149, Wanted Man,4.7,610.0,NA,NA,NA,2024,1h 25m,NA,NA
+150, Untitled Avatar: The Last Airbender Film 1,NA,NA,NA,NA,NA,2025,NA,NA,NA
+151, Avengers: Secret Wars,NA,NA,NA,NA,NA,2027,NA,NA,NA
+152, Skeletons in the Closet,3.2,297.0,NA,NA,NA,2024,1h 32m,NA,NA
+153, The Electric State,NA,NA,NA,NA,NA,NA,NA,NA,NA
+154, Sherlock Holmes 3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+155, Smile 2,NA,NA,NA,NA,NA,2024,NA,NA,NA
+156, Rendezvous with Rama,NA,NA,NA,NA,NA,NA,NA,NA,NA
+157, The War on Children,7.2,320.0,NA,NA,NA,2024,2h 21m,NA,NA
+158, The Painter,4.6,805.0,NA,NA,15,2024,1h 40m,NA,NA
+159, Tarot,NA,NA,NA,NA,NA,2024,NA,NA,NA
+160, Project Hail Mary,NA,NA,NA,NA,NA,NA,NA,NA,NA
+161, Code 8: Part II,6.0,659.0,NA,NA,NA,2024,1h 40m,NA,NA
+162, Another End,6.6,175.0,52,"Drama, Romance, Sci-Fi",NA,2024,2h 9m,"Gael García Bernal, Renate Reinsve, Bérénice Bejo, Olivia Williams",Piero Messina
+163, A Hip Hop Story,8.5,36.0,NA,NA,NA,2024,1h 30m,NA,NA
+164, Snatched a Billionaire to be My Husband,8.4,227.0,NA,NA,NA,2024,42m,NA,NA
+165, Pignorant,8.8,1400.0,NA,NA,NA,2024,1h 42m,NA,NA
+166, La Cocina,7.4,149.0,75,Drama,NA,2024,2h 19m,"Kerry Ardra, María Fernanda Bosque, Raúl Briones, Shavanna Calder",Alonso Ruizpalacios
+167, Avatar 3,NA,NA,NA,NA,NA,2025,NA,NA,NA
+168, Terrifier 3,NA,NA,NA,NA,NA,2024,NA,NA,NA
+169, Rogue Elements: A Ryan Drake Story,NA,NA,NA,NA,NA,NA,NA,NA,NA
+170, Megamind vs. The Doom Syndicate,NA,NA,NA,NA,TV-G,2024,1h 23m,NA,NA
+171, The Idea of You,NA,NA,NA,NA,R,2024,1h 55m,NA,NA
+172, Outlaw Posse,NA,NA,NA,NA,R,2024,1h 48m,NA,NA
+173, Karate Kid,NA,NA,NA,NA,NA,2024,NA,NA,NA
+174, Stranger in the Woods,3.5,280.0,NA,NA,NA,2024,1h 22m,NA,NA
+175, Five Nights at Freddy's 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+176, The Hunchback of Notre Dame,NA,NA,NA,NA,NA,NA,NA,NA,NA
+177, Final Destination 6,NA,NA,NA,NA,NA,NA,NA,NA,NA
+178, 28 Years Later,NA,NA,NA,NA,NA,NA,NA,NA,NA
+179, Batgirl,NA,NA,NA,NA,NA,NA,NA,NA,NA
+180, Treasure,7.1,77.0,NA,NA,NA,2024,1h 52m,NA,NA
+181, Altered Reality,6.2,33.0,NA,NA,NA,2024,1h 39m,NA,NA
+182, Descendants: The Rise of Red,NA,NA,NA,NA,NA,2024,TV-G,NA,NA
+183, The Old Guard 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+184, Ponyboi,6.5,141.0,NA,NA,NA,2024,1h 43m,NA,NA
+185, DarkGame,7.1,268.0,NA,NA,NA,2024,1h 30m,NA,NA
+186, Now You See Me 3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+187, Havoc,NA,NA,NA,NA,NA,NA,NA,NA,NA
+188, A Real Pain,7.4,223.0,84,"Comedy, Drama",NA,2024,1h 30m,"Kieran Culkin, Jesse Eisenberg, Olha Bosova, Banner Eisenberg",Jesse Eisenberg
+189, Sleeping Dogs,NA,NA,NA,NA,R,2024,1h 50m,NA,NA
+190, The Union,NA,NA,NA,NA,NA,2024,PG-13,NA,NA
+191, Cellphone,3.0,154.0,NA,NA,NA,2024,1h 28m,NA,NA
+192, Tron 3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+193, Freaky Tales,7.5,120.0,58,"Adventure, Comedy, Drama",R,2024,1h 46m,"Pedro Pascal, Ben Mendelsohn, Tom Hanks, Ji-young Yoo",Anna BodenRyan Fleck
+194, Autumn and the Black Jaguar,5.9,184.0,NA,NA,NA,2024,1h 40m,NA,NA
+195, Back in Action,NA,NA,NA,NA,NA,2024,NA,NA,NA
+196, Shelby Oaks,NA,NA,NA,NA,NA,1h 39m,NA,NA,NA
+197, 5lbs of Pressure,NA,NA,NA,NA,15,2024,1h 51m,NA,NA
+198, Hippie Hippie Shake,NA,NA,NA,NA,NA,R,NA,NA,NA
+199, Not Another Church Movie,NA,NA,NA,NA,NA,2024,R,NA,NA
+200, Unfrosted: The Pop-Tart Story,NA,NA,NA,NA,PG-13,2024,1h 33m,NA,NA
+201, Frozen III,NA,NA,NA,NA,NA,NA,NA,NA,NA
+202, Unsung Hero,NA,NA,NA,NA,PG,2024,1h 52m,NA,NA
+203, Zootopia 2,NA,NA,NA,NA,NA,2025,NA,NA,NA
+204, Saw XI,NA,NA,NA,NA,NA,2024,NA,NA,NA
+205, Sunrise,3.7,487.0,NA,NA,R,2024,1h 33m,NA,NA
+206, Love Me,6.0,210.0,54,"Drama, Sci-Fi",NA,2024,1h 32m,"Kristen Stewart, Steven Yeun",Andrew ZucheroSam Zuchero
+207, In the Hand of Dante,NA,NA,NA,NA,NA,NA,NA,NA,NA
+208, Toy Story 5,NA,NA,NA,NA,NA,2026,NA,NA,NA
+209, Modi,NA,NA,NA,NA,NA,NA,NA,NA,NA
+210, Adam the First,8.8,18.0,NA,NA,NA,2024,1h 43m,NA,NA
+211, Justice League: Crisis on Infinite Earths - Part Two,NA,NA,NA,NA,PG-13,2024,1h 34m,NA,NA
+212, National Theatre Live: Vanya,8.7,116.0,NA,NA,NA,2024,1h 40m,NA,NA
+213, Kung Fury 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+214, Wise Guys,NA,NA,NA,NA,NA,2024,NA,NA,NA
+215, Top Gun 3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+216, She's Obsessed with My Husband,5.8,81.0,NA,NA,TV-14,2024,1h 28m,NA,NA
+217, The Thursday Murder Club,NA,NA,NA,NA,NA,NA,NA,NA,NA
+218, Elio,NA,NA,NA,NA,NA,2025,NA,NA,NA
+219, Bitconned,6.5,2600.0,NA,NA,15,2024,1h 33m,NA,NA
+220, Mad Max: The Wasteland,NA,NA,NA,NA,NA,NA,NA,NA,NA
+221, Camp Pleasant Lake,8.2,58.0,NA,NA,NA,2024,1h 30m,NA,NA
+222, My Old Ass,6.7,159.0,78,Comedy,NA,2024,1h 28m,"Aubrey Plaza, Maddie Ziegler, Maria Dizzia, Percy Hynes White",Megan Park
+223, Klara and the Sun,NA,NA,NA,NA,NA,2024,NA,NA,NA
+224, Dune: Part Three,NA,NA,NA,NA,NA,NA,NA,NA,NA
+225, Destroy All Neighbors,5.3,1100.0,53,"Comedy, Horror",NA,2024,1h 25m,"Jonah Ray, Kiran Deol, Randee Heller, Pete Ploszek",Josh Forbes
+226, Greedy People,NA,NA,NA,NA,NA,2024,NA,NA,NA
+227, SNL 1975,NA,NA,NA,NA,NA,NA,NA,NA,NA
+228, Peter Five Eight,NA,NA,NA,NA,NA,2024,NA,NA,NA
+229, Untitled Guy Ritchie Project,NA,NA,NA,NA,NA,2025,NA,NA,NA
+230, Furya,NA,NA,NA,NA,NA,NA,NA,NA,NA
+231, A Complete Unknown,NA,NA,NA,NA,NA,NA,NA,NA,NA
+232, Y2K,NA,NA,NA,NA,NA,2024,1h 33m,NA,NA
+233, Peppa's Cinema Party,5.8,97.0,NA,NA,U,2024,1h 5m,NA,NA
+234, Armored,NA,NA,NA,NA,NA,2024,NA,NA,NA
+235, The Life of Chuck,NA,NA,NA,NA,NA,NA,NA,NA,NA
+236, Escape from Germany,NA,NA,NA,NA,NA,2024,PG,NA,NA
+237, I Saw the TV Glow,6.5,126.0,86,"Drama, Horror",PG-13,2024,1h 40m,"Justice Smith, Brigette Lundy-Paine, Ian Foreman, Helena Howard",Jane Schoenbrun
+238, Earworm,3.5,96.0,NA,NA,NA,2024,1h 41m,NA,NA
+239, The Instigators,NA,NA,NA,NA,NA,NA,NA,NA,NA
+240, Something in the Water,NA,NA,NA,NA,15,2024,1h 26m,NA,NA
+241, Memento,NA,NA,NA,NA,NA,NA,NA,NA,NA
+242, The Black Phone 2,NA,NA,NA,NA,NA,2025,NA,NA,NA
+243, Wicked: Part Two,NA,NA,NA,NA,NA,2025,NA,NA,NA
+244, Paddington in Peru,NA,NA,NA,NA,NA,2024,NA,NA,NA
+245, Star Wars: New Jedi Order,NA,NA,NA,NA,NA,2026,NA,NA,NA
+246, Arcadian,NA,NA,NA,NA,NA,2024,1h 32m,NA,NA
+247, A Soweto Love Story,5.3,125.0,NA,NA,12,2024,1h 41m,NA,NA
+248, Live Die Repeat and Repeat,NA,NA,NA,NA,NA,NA,NA,NA,NA
+249, Atlas,NA,NA,NA,NA,NA,2024,PG-13,NA,NA
+250, The Firing Squad,NA,NA,NA,NA,NA,2024,NA,NA,NA
+251, Oh Canada,NA,NA,NA,NA,NA,1h 31m,NA,NA,NA
+252, Your Monster,8.6,105.0,68,"Comedy, Horror, Romance",NA,2024,1h 38m,"Meghann Fahy, Melissa Barrera, Tommy Dewey, Edmund Donovan",Caroline Lindy
+253, Ella McCay,NA,NA,NA,NA,NA,NA,NA,NA,NA
+254, Untitled Spider-Man Sequel,NA,NA,NA,NA,NA,NA,NA,NA,NA
+255, Woman with the Red Lipstick,5.4,109.0,NA,NA,TV-14,2024,1h 27m,NA,NA
+256, The Last Planet,NA,NA,NA,NA,NA,NA,NA,NA,NA
+257, Cinderella's Curse,NA,NA,NA,NA,NA,2024,NA,NA,NA
+258, Chosen Family,8.4,12.0,NA,NA,NA,2024,1h 28m,NA,NA
+259, Speak No Evil,NA,NA,NA,NA,NA,2024,R,NA,NA
+260, Knives Out 3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+261, Carry On,NA,NA,NA,NA,NA,2024,NA,NA,NA
+262, Kingsman: The Blue Blood,NA,NA,NA,NA,NA,NA,NA,NA,NA
+263, Rush Hour 4,NA,NA,NA,NA,NA,NA,NA,NA,NA
+264, The Bad Shepherd,6.9,18.0,NA,NA,NA,2024,R,NA,NA
+265, Materialists,NA,NA,NA,NA,NA,NA,NA,NA,NA
+266, John Wick: Chapter 5,NA,NA,NA,NA,NA,NA,NA,NA,NA
+267, We're the Millers 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+268, Clue,NA,NA,NA,NA,NA,NA,NA,NA,NA
+269, Passport to Love,6.4,119.0,NA,NA,NA,2024,NA,NA,NA
+270, Life of Belle,5.7,115.0,NA,NA,NA,2024,1h 13m,NA,NA
+271, Terminator: Skynet Rising,NA,NA,NA,NA,NA,2024,NA,NA,NA
+272, Música,NA,NA,NA,NA,PG-13,2024,1h 31m,NA,NA
+273, Alice in Terrorland,6.7,631.0,NA,NA,15,2023,1h 17m,NA,NA
+274, Open Wide,5.8,354.0,NA,NA,NA,2024,1h 48m,NA,NA
+275, The Late Game,9.7,33.0,NA,NA,NA,2024,1h 25m,NA,NA
+276, Roosevelt,NA,NA,NA,NA,NA,NA,NA,NA,NA
+277, Kalahari,NA,NA,NA,NA,NA,NA,NA,NA,NA
+278, Jade,7.7,38.0,NA,NA,NA,2024,NA,NA,NA
+279, The Vengeance of Dracula,NA,NA,NA,NA,NA,2024,1h 26m,NA,NA
+280, A Family Affair,NA,NA,NA,NA,NA,NA,NA,NA,NA
+281, BRZRKR,NA,NA,NA,NA,NA,NA,NA,NA,NA
+282, Sister Act 3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+283, Six Triple Eight,NA,NA,NA,NA,NA,2024,PG-13,NA,NA
+284, The Wolf Man,NA,NA,NA,NA,NA,2024,NA,NA,NA
+285, Red Notice 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+286, The Gorge,NA,NA,NA,NA,NA,NA,NA,NA,NA
+287, My Dead Friend Zoe,NA,NA,NA,NA,NA,2024,1h 38m,NA,NA
+288, The Vampire Next Door,4.5,314.0,NA,NA,NA,2024,1h 50m,NA,NA
+289, The Nightingale,NA,NA,NA,NA,NA,NA,NA,NA,NA
+290, From the Ashes,NA,NA,NA,NA,NA,2024,NA,NA,NA
+291, Kneecap,7.4,131.0,81,"Comedy, Drama",NA,2024,1h 45m,"Móglaí Bap, Mo Chara, DJ Próvai, Josie Walker",Rich Peppiatt
+292, Midas Man,NA,NA,NA,NA,NA,2024,NA,NA,NA
+293, The Last Front,5.9,154.0,NA,NA,NA,2024,1h 38m,NA,NA
+294, Echo Valley,NA,NA,NA,NA,NA,NA,NA,NA,NA
+295, Death Stranding,NA,NA,NA,NA,NA,NA,NA,NA,NA
+296, Hamlet,6.8,9.0,NA,NA,NA,2024,1h 57m,NA,NA
+297, Levon's Trade,NA,NA,NA,NA,NA,NA,NA,NA,NA
+298, Spring Break '83,NA,NA,NA,NA,NA,NA,NA,NA,NA
+299, Hellboy: The Crooked Man,NA,NA,NA,NA,NA,2024,NA,NA,NA
+300, Hellhound,4.4,279.0,NA,NA,15,2024,1h 43m,NA,NA
+301, Here,NA,NA,NA,NA,NA,NA,NA,NA,NA
+302, Scoop,NA,NA,NA,NA,NA,2024,1h 42m,NA,NA
+303, Little Death,5.5,148.0,57,"Comedy, Drama",NA,2024,1h 50m,"David Schwimmer, Gaby Hoffmann, Talia Ryder, Dominic Fike",Jack Begert
+304, Piece by Piece,NA,NA,NA,NA,NA,2024,NA,NA,NA
+305, Gremlins 3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+306, In a Violent Nature,7.3,41.0,NA,NA,NA,2024,1h 34m,NA,NA
+307, Untitled Tom Cruise/SpaceX Project,NA,NA,NA,NA,NA,NA,NA,NA,NA
+308, National Treasure 3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+309, Warchief,5.5,338.0,NA,NA,15,2024,1h 34m,NA,NA
+310, The History of Sound,NA,NA,NA,NA,NA,NA,NA,NA,NA
+311, Winner,7.6,38.0,NA,NA,NA,2024,1h 43m,NA,NA
+312, Goldilocks and the Three Bears: Death and Porridge,NA,NA,NA,NA,18,2024,1h 23m,NA,NA
+313, Hell Camp: Teen Nightmare,6.1,2600.0,NA,NA,15,2023,1h 30m,NA,NA
+314, Ice Road 2: Road to the Sky,NA,NA,NA,NA,NA,NA,NA,NA,NA
+315, The Apprentice,NA,NA,NA,NA,NA,NA,NA,NA,NA
+316, It's What's Inside,8.7,72.0,59,"Comedy, Horror, Mystery",NA,2024,1h 43m,"Alycia Debnam-Carey, Madison Davenport, Brittany O'Grady, Gavin Leatherwood",Greg Jardin
+317, Before Dawn,NA,NA,NA,NA,NA,2024,1h 35m,NA,NA
+318, Play Dirty,NA,NA,NA,NA,NA,NA,NA,NA,NA
+319, Reagan,NA,NA,NA,NA,NA,NA,NA,NA,NA
+320, Murder at First Swipe,7.6,70.0,NA,NA,NA,2024,NA,NA,NA
+321, Jessica Frost,NA,NA,NA,NA,NA,2024,16+,NA,NA
+322, Fantastic Beasts and Where to Find Them 4,NA,NA,NA,NA,NA,NA,NA,NA,NA
+323, Django/Zorro,NA,NA,NA,NA,NA,NA,NA,NA,NA
+324, Blitz,NA,NA,NA,NA,NA,NA,NA,NA,NA
+325, Untitled Maggie Gyllenhaal Project,NA,NA,NA,NA,NA,NA,NA,NA,NA
+326, Cruella 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+327, Presence,6.4,69.0,80,"Horror, Thriller",NA,2024,1h 25m,"Lucy Liu, Julia Fox, Chris Sullivan, West Mulholland",Steven Soderbergh
+328, The Windigo,5.4,427.0,NA,NA,NA,2024,1h 25m,NA,NA
+329, The Casagrandes Movie,NA,NA,NA,NA,TV-Y7,2024,1h 29m,NA,NA
+330, Untitled Star Trek: Beyond Sequel,NA,NA,NA,NA,NA,NA,NA,NA,NA
+331, The Uninvited,NA,NA,NA,NA,NA,2024,1h 37m,NA,NA
+332, Queer,NA,NA,NA,NA,NA,NA,NA,NA,NA
+333, Winter Spring Summer or Fall,NA,NA,NA,NA,NA,R,NA,NA,NA
+334, Out of My Mind,8.2,25.0,NA,NA,NA,2024,1h 42m,NA,NA
+335, Abducted Off the Street: The Carlesha Gaither Story,7.5,72.0,NA,NA,NA,2024,TV-14,NA,NA
+336, Dutch II,8.1,24.0,NA,NA,NA,2024,NA,NA,NA
+337, Death of a Unicorn,NA,NA,NA,NA,NA,NA,NA,NA,NA
+338, The Disruptors,9.4,25.0,NA,NA,NA,2024,1h 26m,NA,NA
+339, Amateur,NA,NA,NA,NA,NA,2024,NA,NA,NA
+340, ElemenTory,7.2,15.0,NA,NA,NA,2024,NA,NA,NA
+341, The Beautiful Game,NA,NA,NA,NA,PG-13,2024,2h 5m,NA,NA
+342, The Wild Robot,NA,NA,NA,NA,NA,2024,NA,NA,NA
+343, Krazy House,5.2,144.0,NA,NA,NA,2024,1h 30m,NA,NA
+344, Shrunk,NA,NA,NA,NA,NA,2024,NA,NA,NA
+345, Heat 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+346, Deep Water,NA,NA,NA,NA,NA,NA,NA,NA,NA
+347, Untitled Scarlett Johansson/Channing Tatum Film,NA,NA,NA,NA,NA,2024,NA,NA,NA
+348, The Visitor,5.7,34.0,NA,NA,NA,2024,1h 41m,NA,NA
+349, M3GAN 2.0,NA,NA,NA,NA,NA,2025,NA,NA,NA
+350, Blink Twice,NA,NA,NA,NA,NA,2024,NA,NA,NA
+351, Didi,7.8,152.0,77,"Comedy, Drama",NA,2024,1h 31m,"Izaac Wang, Joan Chen, Shirley Chen, Chang Li Hua",Sean Wang
+352, Merrily We Roll Along,NA,NA,NA,NA,NA,NA,NA,NA,NA
+353, Flight Risk,NA,NA,NA,NA,NA,NA,NA,NA,NA
+354, Tin Soldier,NA,NA,NA,NA,NA,2024,NA,NA,NA
+355, Darkness of Man,NA,NA,NA,NA,NA,1h 49m,15,NA,NA
+356, The Night They Came Home,3.7,288.0,NA,NA,15,2024,1h 45m,NA,NA
+357, Mike Epps: Ready to Sell Out,5.4,175.0,NA,NA,18,2024,1h 1m,NA,NA
+358, Animals,NA,NA,NA,NA,NA,NA,NA,NA,NA
+359, The Private Eye,7.3,70.0,NA,NA,R,2024,1h 55m,NA,NA
+360, We Live in Time,NA,NA,NA,NA,NA,2024,NA,NA,NA
+361, The SpongeBob Movie: Search for SquarePants,NA,NA,NA,NA,NA,2025,NA,NA,NA
+362, Thanksgiving 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+363, Spellbound,NA,NA,NA,NA,NA,NA,NA,NA,NA
+364, Breakwater,5.1,652.0,NA,NA,15,2023,1h 37m,NA,NA
+365, Johnny Puff: Secret Mission,7.0,152.0,NA,NA,NA,2024,1h 27m,NA,NA
+366, Peter Pan's Neverland Nightmare,NA,NA,NA,NA,NA,NA,NA,NA,NA
+367, The Rosie Project,NA,NA,NA,NA,NA,NA,NA,NA,NA
+368, I Wish You All the Best,NA,NA,NA,NA,NA,2024,1h 32m,NA,NA
+369, Crawlers,NA,NA,NA,NA,NA,2024,1h 30m,NA,NA
+370, Experiment 77,NA,NA,NA,NA,NA,2024,NA,NA,NA
+371, The Reincarnation of Dracula,NA,NA,NA,NA,NA,2024,NA,NA,NA
+372, Kickboxer: Armageddon,NA,NA,NA,NA,NA,NA,NA,NA,NA
+373, Untitled Pirates of the Caribbean Project,NA,NA,NA,NA,NA,NA,NA,NA,NA
+374, Seize Them!,NA,NA,NA,NA,NA,2024,NA,NA,NA
+375, Aladdin 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+376, Hamnet,NA,NA,NA,NA,NA,NA,NA,NA,NA
+377, Thelma the Unicorn,NA,NA,NA,NA,PG,2024,1h 33m,NA,NA
+378, Mr Bates vs the Post Office: The Real Story,7.7,247.0,NA,NA,NA,2024,47m,NA,NA
+379, Between the Temples,6.8,125.0,82,Comedy,NA,2024,1h 51m,"Jason Schwartzman, Carol Kane, Dolly De Leon, Caroline Aaron",Nathan Silver
+380, The Brutalist,NA,NA,NA,NA,NA,NA,NA,NA,NA
+381, Cocktails with Nick and Lana,7.5,204.0,NA,NA,NA,2024,13+,NA,NA
+382, Horizon: An American Saga - Chapter 2,NA,NA,NA,NA,NA,2024,NA,NA,NA
+383, The Neon Highway,NA,NA,NA,NA,NA,2024,PG-13,NA,NA
+384, The Resurrection of Frankenstein,NA,NA,NA,NA,NA,2024,1h 28m,NA,NA
+385, Young Woman and the Sea,NA,NA,NA,NA,PG,2024,1h 40m,NA,NA
+386, Cliffhanger,NA,NA,NA,NA,NA,NA,NA,NA,NA
+387, Maria,NA,NA,NA,NA,NA,NA,NA,NA,NA
+388, Little Wing,NA,NA,NA,NA,NA,2024,PG-13,NA,NA
+389, Arthur's Whisky,4.4,501.0,NA,NA,12,2024,1h 34m,NA,NA
+390, In the Summers,7.6,102.0,83,Drama,NA,2024,1h 35m,"Residente, Sasha Calle, Lio Mehiel, Dreya Castillo",Alessandra Lacorazza Samudio
+391, Blood Meridian,NA,NA,NA,NA,NA,NA,NA,NA,NA
+392, Thelma,7.4,153.0,76,"Action, Comedy",NA,2024,1h 37m,"June Squibb, Fred Hechinger, Richard Roundtree, Parker Posey",Josh Margolin
+393, He Killed in Ecstasy,NA,NA,NA,NA,NA,2024,1h 20m,NA,NA
+394, Will & Harper,8.5,70.0,75,Documentary,NA,2024,1h 54m,"Will Ferrell, Harper Steele",Josh Greenbaum
+395, A Widow Seduced,5.8,81.0,NA,NA,NA,2024,TV-14,NA,NA
+396, Our Little Secret,NA,NA,NA,NA,NA,2024,NA,NA,NA
+397, The Phoenician Scheme,NA,NA,NA,NA,NA,NA,NA,NA,NA
+398, Supergirl,NA,NA,NA,NA,NA,NA,NA,NA,NA
+399, Harold and the Purple Crayon,NA,NA,NA,NA,PG,2024,1h 32m,NA,NA
+400, Untitled Noah Baumbach Picture,NA,NA,NA,NA,NA,NA,NA,NA,NA
+401, Swimming Home,7.2,32.0,NA,NA,NA,2024,1h 39m,NA,NA
+402, Murder in a Teacup,7.5,33.0,NA,NA,NA,2024,1h 33m,NA,NA
+403, Babes,NA,NA,NA,NA,NA,2024,1h 49m,NA,NA
+404, Tell No Lies,5.2,128.0,NA,NA,TV-MA,2024,1h 44m,NA,NA
+405, The Unbreakable Boy,NA,NA,NA,NA,NA,2025,PG,NA,NA
+406, Borderline,NA,NA,NA,NA,NA,R,NA,NA,NA
+407, Slingshot,NA,NA,NA,NA,NA,2024,NA,NA,NA
+408, The Chronicles of Narnia: The Silver Chair,NA,NA,NA,NA,NA,NA,NA,NA,NA
+409, Greenland: Migration,NA,NA,NA,NA,NA,NA,NA,NA,NA
+410, Legend of the White Dragon,NA,NA,NA,NA,NA,NA,NA,NA,NA
+411, Emperor,NA,NA,NA,NA,NA,NA,NA,NA,NA
+412, Iron Lung,NA,NA,NA,NA,NA,1h 35m,NA,NA,NA
+413, Fortunes of War,9.0,21.0,NA,NA,15,2024,1h 25m,NA,NA
+414, Project Dorothy,6.1,1300.0,NA,NA,NA,2024,NA,NA,NA
+415," Holland, Michigan",NA,NA,NA,NA,NA,NA,NA,NA,NA
+416, Babygirl,NA,NA,NA,NA,NA,NA,NA,NA,NA
+417, In the Lost Lands,NA,NA,NA,NA,NA,2024,NA,NA,NA
+418, Kevin James: Irregardless,5.6,570.0,NA,NA,NA,2024,1h 2m,NA,NA
+419, Azrael,NA,NA,NA,NA,R,2024,1h 25m,NA,NA
+420, Brothers,NA,NA,NA,NA,NA,R,NA,NA,NA
+421, The Blackwell Ghost 8,7.4,42.0,NA,NA,NA,2024,1h 9m,NA,NA
+422, The Seduction of Dracula,NA,NA,NA,NA,NA,2024,1h 20m,NA,NA
+423, Spider-Man 4,NA,NA,NA,NA,NA,NA,NA,NA,NA
+424, The Order,NA,NA,NA,NA,NA,NA,NA,NA,NA
+425, Boys of Summer,NA,NA,NA,NA,NA,1h 43m,PG-13,NA,NA
+426, A Good Enough Day,9.3,19.0,NA,NA,NA,2024,1h 23m,NA,NA
+427, Man and Witch: The Dance of a Thousand Steps,NA,NA,NA,NA,PG,2024,1h 34m,NA,NA
+428, Maleficent 3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+429, Creed IV,NA,NA,NA,NA,NA,NA,NA,NA,NA
+430, Henry Danger: The Movie,NA,NA,NA,NA,NA,NA,NA,NA,NA
+431, Star Trek: Section 31,NA,NA,NA,NA,NA,2025,NA,NA,NA
+432, Cash Out,NA,NA,NA,NA,NA,R,NA,NA,NA
+433, Love Child,NA,NA,NA,NA,NA,NA,NA,NA,NA
+434, Scream 7,NA,NA,NA,NA,NA,NA,NA,NA,NA
+435, Scoob!: Holiday Haunt,NA,NA,NA,NA,NA,1h 2m,TV-Y7,NA,NA
+436, The Ark and the Aardvark,NA,NA,NA,NA,NA,2026,NA,NA,NA
+437, Saving Bikini Bottom: The Sandy Cheeks Movie,NA,NA,NA,NA,NA,1h 22m,Not Rated,NA,NA
+438, Carol Doda Topless at the Condor,NA,NA,NA,NA,NA,2024,R,NA,NA
+439, Unsinkable,NA,NA,NA,NA,NA,1h 50m,PG,NA,NA
+440, The Division,NA,NA,NA,NA,NA,NA,NA,NA,NA
+441, The Crypto: Dark Justice,NA,NA,NA,NA,13+,2024,3h,NA,NA
+442, The Godmother,NA,NA,NA,NA,NA,NA,NA,NA,NA
+443, The Phantom Warrior,8.9,127.0,NA,NA,NA,2024,NA,NA,NA
+444, Woody Woodpecker Goes to Camp,NA,NA,NA,NA,NA,2024,1h 40m,NA,NA
+445, Untitled M. Night Shyamalan Project,NA,NA,NA,NA,NA,2024,NA,NA,NA
+446, Snow White and the Evil Queen,NA,NA,NA,NA,NA,2024,NA,NA,NA
+447, Deep Cover,NA,NA,NA,NA,NA,NA,NA,NA,NA
+448, The Surfer,NA,NA,NA,NA,NA,NA,NA,NA,NA
+449, Homestead,NA,NA,NA,NA,NA,NA,NA,NA,NA
+450, The Marriage Pass,6.9,58.0,NA,NA,NA,2024,1h 30m,NA,NA
+451, One of Us,NA,NA,NA,NA,NA,NA,NA,NA,NA
+452, Last Swim,8.2,30.0,NA,NA,NA,2024,1h 40m,NA,NA
+453, Legally Blonde 3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+454, The Piano Lesson,NA,NA,NA,NA,NA,NA,NA,NA,NA
+455, The Naked Gun,NA,NA,NA,NA,NA,NA,NA,NA,NA
+456, Machete Kills in Space,NA,NA,NA,NA,NA,NA,NA,NA,NA
+457, The Killer's Game,NA,NA,NA,NA,NA,NA,NA,NA,NA
+458, Christspiracy,NA,NA,NA,NA,NA,2024,PG-13,NA,NA
+459, My Bloody Galentine,6.5,60.0,NA,NA,NA,2024,1h 42m,NA,NA
+460, Rumours,NA,NA,NA,NA,NA,NA,NA,NA,NA
+461, The Six Billion Dollar Man,NA,NA,NA,NA,NA,NA,NA,NA,NA
+462, Hot Milk,NA,NA,NA,NA,NA,NA,NA,NA,NA
+463, The Shamrock Spitfire,NA,NA,NA,NA,12,2024,1h 48m,NA,NA
+464, Take Cover,NA,NA,NA,NA,NA,2024,NA,NA,NA
+465, Breathe,NA,NA,NA,NA,NA,2024,PG-13,NA,NA
+466, Easy's Waltz,NA,NA,NA,NA,NA,NA,NA,NA,NA
+467, They Follow,NA,NA,NA,NA,NA,NA,NA,NA,NA
+468, The Housewife and the Hustler 2: The Reckoning,6.4,26.0,NA,NA,NA,2024,1h 34m,NA,NA
+469, Bird,NA,NA,NA,NA,NA,NA,NA,NA,NA
+470, Assassination,NA,NA,NA,NA,NA,NA,NA,NA,NA
+471, Savage House,NA,NA,NA,NA,NA,NA,NA,NA,NA
+472, Gunner,NA,NA,NA,NA,NA,2024,NA,NA,NA
+473, Love... Reconsidered,6.8,30.0,NA,NA,NA,2024,1h 28m,NA,NA
+474, Turtles All the Way Down,NA,NA,NA,NA,NA,PG-13,NA,NA,NA
+475, Rothko,NA,NA,NA,NA,NA,2024,NA,NA,NA
+476, Amo Saddam,NA,NA,NA,NA,NA,NA,NA,NA,NA
+477, The Greatest Love Story Never Told,6.8,203.0,NA,NA,R,2024,1h 26m,NA,NA
+478, One for the Money,NA,NA,NA,NA,NA,NA,NA,NA,NA
+479, Architecton,6.8,47.0,NA,NA,NA,2024,1h 38m,NA,NA
+480, The Super Mario Bros. Movie Sequel,NA,NA,NA,NA,NA,NA,NA,NA,NA
+481, Weapons,NA,NA,NA,NA,NA,NA,NA,NA,NA
+482, The Dreadful,NA,NA,NA,NA,NA,NA,NA,NA,NA
+483, Queen of the Ring,NA,NA,NA,NA,NA,NA,NA,NA,NA
+484, Arctic Hollow,3.4,105.0,NA,NA,NA,2024,1h 10m,NA,NA
+485, Untitled Adam Sandler/Safdie Brothers Project,NA,NA,NA,NA,NA,NA,NA,NA,NA
+486, The Stepdaughter,NA,NA,NA,NA,NA,2024,NA,NA,NA
+487, Nightbitch,NA,NA,NA,NA,NA,R,NA,NA,NA
+488, Skyline: Warpath,NA,NA,NA,NA,NA,NA,NA,NA,NA
+489, Nobody 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+490, Sing 3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+491, Marked Men,NA,NA,NA,NA,NA,2024,NA,NA,NA
+492, Dahomey,6.3,62.0,84,Documentary,NA,2024,1h 8m,"Gildas Adannou, Habib Ahandessi, Joséa Guedje",Mati Diop
+493, The Mandalorian & Grogu,NA,NA,NA,NA,NA,NA,NA,NA,NA
+494, You Can't Win,NA,NA,NA,NA,NA,NA,NA,NA,NA
+495, Everest,NA,NA,NA,NA,NA,NA,NA,NA,NA
+496, Zombies 4,NA,NA,NA,NA,NA,NA,NA,NA,NA
+497, Dying for Fame,5.5,95.0,NA,NA,NA,2024,TV-14,NA,NA
+498, Super Troopers 3: Winter Soldiers,NA,NA,NA,NA,NA,1h 40m,R,NA,NA
+499, Made in England,8.2,24.0,NA,NA,NA,2024,2h 11m,NA,NA
+500, The Last Train to New York,NA,NA,NA,NA,NA,NA,NA,NA,NA
+501, Outcome,NA,NA,NA,NA,NA,NA,NA,NA,NA
+502, Alien Wars: Judgement Day,NA,NA,NA,NA,NA,2024,1h 30m,NA,NA
+503, Spinal Tap II,NA,NA,NA,NA,NA,NA,NA,NA,NA
+504, Dr. Death: Cutthroat Conman,6.5,204.0,NA,NA,NA,2023,1h 30m,NA,NA
+505, Forty-Seven Days with Jesus,NA,NA,NA,NA,NA,2024,NA,NA,NA
+506, Untitled Adventures of Tintin Sequel,NA,NA,NA,NA,NA,NA,NA,NA,NA
+507, The Legend of Johnny Jones,NA,NA,NA,NA,NA,2024,NA,NA,NA
+508, Night Has Fallen,NA,NA,NA,NA,NA,NA,NA,NA,NA
+509, The Brave and the Bold,NA,NA,NA,NA,NA,NA,NA,NA,NA
+510, Tomb Raider 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+511, The Chronology of Water,NA,NA,NA,NA,NA,NA,NA,NA,NA
+512, Twisters,NA,NA,NA,NA,NA,NA,NA,NA,NA
+513, Dirty Angels,NA,NA,NA,NA,NA,NA,NA,NA,NA
+514, Mistborn: The Final Empire,NA,NA,NA,NA,NA,NA,NA,NA,NA
+515, The Unholy Trinity,NA,NA,NA,NA,NA,NA,NA,NA,NA
+516, The Pack,NA,NA,NA,NA,NA,NA,NA,NA,NA
+517, Dragon's Lair: The Movie,NA,NA,NA,NA,NA,NA,NA,NA,NA
+518, Eleanor the Great,NA,NA,NA,NA,NA,NA,NA,NA,NA
+519, Black Bag,NA,NA,NA,NA,NA,NA,NA,NA,NA
+520, Untitled Accountant Sequel,NA,NA,NA,NA,NA,NA,NA,NA,NA
+521, Gacy: Serial Killer Next Door,6.3,45.0,NA,NA,TV-MA,2024,1h 37m,NA,NA
+522, The End,NA,NA,NA,NA,NA,NA,NA,NA,NA
+523, The Running Man,NA,NA,NA,NA,NA,NA,NA,NA,NA
+524, Dodgeball 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+525, Mythica: Stormbound,8.3,24.0,NA,NA,NA,2024,NA,NA,NA
+526, Locked,NA,NA,NA,NA,NA,NA,NA,NA,NA
+527, The Last Showgirl,NA,NA,NA,NA,NA,NA,NA,NA,NA
+528, Bad Blood,NA,NA,NA,NA,NA,NA,NA,NA,NA
+529, Masters of the Universe,NA,NA,NA,NA,NA,NA,NA,NA,NA
+530, Billy Knight,NA,NA,NA,NA,NA,2024,1h 30m,NA,NA
+531, Roswell Delirium,NA,NA,NA,NA,NA,2024,1h 50m,NA,NA
+532, Mother Mary,NA,NA,NA,NA,NA,NA,NA,NA,NA
+533, Dear Santa,NA,NA,NA,NA,NA,NA,NA,NA,NA
+534, Mother of the Bride,NA,NA,NA,NA,NA,2024,1h 28m,NA,NA
+535, I Am Pilgrim,NA,NA,NA,NA,NA,NA,NA,NA,NA
+536," April 29, 1992",NA,NA,NA,NA,NA,R,NA,NA,NA
+537, Sesame Street,NA,NA,NA,NA,NA,NA,NA,NA,NA
+538, Voyagers,NA,NA,NA,NA,NA,NA,NA,NA,NA
+539, Kage & Celeste,NA,NA,NA,NA,NA,2024,1h 9m,NA,NA
+540, Eno,7.3,14.0,62,Documentary,NA,2024,1h 40m,Brian Eno,Gary Hustwit
+541, Room 0,NA,NA,NA,NA,NA,NA,NA,NA,NA
+542, The Roblox Movie,NA,NA,NA,NA,TV-PG,2025,1h 28m,NA,NA
+543, The Hopeful,NA,NA,NA,NA,NA,2024,1h 30m,NA,NA
+544, The Pickup,NA,NA,NA,NA,NA,NA,NA,NA,NA
+545, We Bury the Dead,NA,NA,NA,NA,NA,NA,NA,NA,NA
+546, A Life of Jesus,NA,NA,NA,NA,NA,NA,NA,NA,NA
+547, Attack on Titan,NA,NA,NA,NA,NA,NA,NA,NA,NA
+548, Three Men and a Baby,NA,NA,NA,NA,NA,NA,NA,NA,NA
+549, Untitle Denzel Washington Project,NA,NA,NA,NA,NA,NA,NA,NA,NA
+550, Wallace and Gromit,NA,NA,NA,NA,NA,2024,NA,NA,NA
+551, Kinda Pregnant,NA,NA,NA,NA,NA,NA,NA,NA,NA
+552, The Church of Living Dangerously,NA,NA,NA,NA,NA,NA,NA,NA,NA
+553, Naya Legend of the Golden Dolphin,NA,NA,NA,NA,NA,2025,1h 40m,NA,NA
+554, Bride Hard,NA,NA,NA,NA,NA,NA,NA,NA,NA
+555, The Legend of Zelda,NA,NA,NA,NA,NA,NA,NA,NA,NA
+556, Austin Powers 4,NA,NA,NA,NA,NA,NA,NA,NA,NA
+557, The Shrouds,NA,NA,NA,NA,NA,NA,NA,NA,NA
+558, G.I. Joe: Ever Vigilant,NA,NA,NA,NA,NA,NA,NA,NA,NA
+559, Noah's Ark,5.3,44.0,NA,NA,NA,2024,1h 24m,NA,NA
+560, Uglies,NA,NA,NA,NA,NA,NA,NA,NA,NA
+561, Bad Haircut,NA,NA,NA,NA,NA,NA,NA,NA,NA
+562, The Full House,NA,NA,NA,NA,NA,2024,NA,NA,NA
+563, The Day the Earth Blew Up: A Looney Tunes Movie,NA,NA,NA,NA,NA,2024,NA,NA,NA
+564, Atropia,NA,NA,NA,NA,NA,NA,NA,NA,NA
+565, 5 Outlaws,NA,NA,NA,NA,NA,R,NA,NA,NA
+566, The Throwback,NA,NA,NA,NA,NA,2024,NA,NA,NA
+567, Fixed,NA,NA,NA,NA,NA,R,NA,NA,NA
+568, Guns 3: Alias Billy the Kid,NA,NA,NA,NA,NA,NA,NA,NA,NA
+569, Lost Phoenix,5.3,118.0,NA,NA,NA,2023,1h 25m,NA,NA
+570, Tropico,NA,NA,NA,NA,NA,NA,NA,NA,NA
+571, The Street Avenger,NA,NA,NA,NA,NA,2024,NA,NA,NA
+572, Cleopatra,NA,NA,NA,NA,NA,NA,NA,NA,NA
+573, The Seven Husbands of Evelyn Hugo,NA,NA,NA,NA,NA,NA,NA,NA,NA
+574, High Tide,NA,NA,NA,NA,NA,2024,1h 41m,NA,NA
+575, Hamlet,NA,NA,NA,NA,NA,NA,NA,NA,NA
+576, Bambi: The Reckoning,NA,NA,NA,NA,NA,NA,NA,NA,NA
+577, Scavenger Hunt,NA,NA,NA,NA,NA,NA,NA,NA,NA
+578, Eternal Return,NA,NA,NA,NA,NA,NA,NA,NA,NA
+579, The Omicron Killer,7.9,48.0,NA,NA,NA,2024,1h 38m,NA,NA
+580, Fourth Wing,NA,NA,NA,NA,NA,NA,NA,NA,NA
+581, Polaris,NA,NA,NA,NA,NA,NA,NA,NA,NA
+582, My Valentine Wedding,7.2,11.0,NA,NA,NA,2024,NA,NA,NA
+583, The Mothership,NA,NA,NA,NA,NA,NA,NA,NA,NA
+584, Rebel Ridge,NA,NA,NA,NA,NA,NA,NA,NA,NA
+585, TWIG,NA,NA,NA,NA,NA,2024,NA,NA,NA
+586, Hounds of War,NA,NA,NA,NA,NA,NA,NA,NA,NA
+587, Unstoppable: The Anthony Robles Story,NA,NA,NA,NA,NA,NA,NA,NA,NA
+588, Untitled Hulk Hogan Biopic,NA,NA,NA,NA,NA,NA,NA,NA,NA
+589, Ray Gunn,NA,NA,NA,NA,NA,NA,NA,NA,NA
+590, Au fil des saisons,6.9,12.0,NA,NA,NA,2024,1h 33m,NA,NA
+591, Kyle and the Last Emerald,NA,NA,NA,NA,TV-PG,2024,20m,NA,NA
+592, Not Without Hope,NA,NA,NA,NA,NA,2024,NA,NA,NA
+593, Big Trouble in Little China,NA,NA,NA,NA,NA,NA,NA,NA,NA
+594, Hedda,NA,NA,NA,NA,NA,NA,NA,NA,NA
+595, Long Day's Journey Into Night,NA,NA,NA,NA,NA,NA,NA,NA,NA
+596, Final Heist,6.3,49.0,NA,NA,NA,2024,NA,NA,NA
+597, Fast and Loose,NA,NA,NA,NA,NA,NA,NA,NA,NA
+598, Witness for the Prosecution,NA,NA,NA,NA,NA,NA,NA,NA,NA
+599, Caddo Lake,NA,NA,NA,NA,NA,2024,PG-13,NA,NA
+600, The Island,NA,NA,NA,NA,NA,R,NA,NA,NA
+601, A Cuban Girl's Guide to Tea and Tomorrow,NA,NA,NA,NA,NA,NA,NA,NA,NA
+602, The Madones,NA,NA,NA,NA,NA,NA,NA,NA,NA
+603, The Last Battleship,NA,NA,NA,NA,NA,2025,NA,NA,NA
+604, Apostle Paul,NA,NA,NA,NA,NA,NA,NA,NA,NA
+605, Confessions of a Cam Girl,4.8,138.0,NA,NA,TV-14,2024,1h 26m,NA,NA
+606, Wizards!,NA,NA,NA,NA,NA,R,NA,NA,NA
+607, Goodrich,NA,NA,NA,NA,NA,R,NA,NA,NA
+608, Hancock 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+609," Father, Mother, Sister, Brother",NA,NA,NA,NA,NA,NA,NA,NA,NA
+610, Mickey's Mouse Trap,NA,NA,NA,NA,NA,1h 20m,NA,NA,NA
+611, Avatar 5,NA,NA,NA,NA,NA,2031,NA,NA,NA
+612, The Monkey,NA,NA,NA,NA,NA,NA,NA,NA,NA
+613, Twinless,NA,NA,NA,NA,NA,NA,NA,NA,NA
+614, Blind Date,NA,NA,NA,NA,NA,NA,NA,NA,NA
+615, They Found Us,NA,NA,NA,NA,NA,NA,NA,NA,NA
+616, Adrift,NA,NA,NA,NA,NA,NA,NA,NA,NA
+617, The Incal,NA,NA,NA,NA,NA,NA,NA,NA,NA
+618, Opus,NA,NA,NA,NA,NA,NA,NA,NA,NA
+619, Rob Peace,7.0,146.0,NA,NA,NA,2024,1h 59m,NA,NA
+620, Two for the Money,NA,NA,NA,NA,NA,NA,NA,NA,NA
+621, Jungle Cruise 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+622, Is This Thing On?,NA,NA,NA,NA,NA,NA,NA,NA,NA
+623, The Legend of Conan,NA,NA,NA,NA,NA,NA,NA,NA,NA
+624, Has Fallen 5,NA,NA,NA,NA,NA,NA,NA,NA,NA
+625, The Hunted,6.6,54.0,NA,NA,15,2024,1h 34m,NA,NA
+626, Smashing Machine,NA,NA,NA,NA,NA,NA,NA,NA,NA
+627, Avatar 4,NA,NA,NA,NA,NA,2029,NA,NA,NA
+628, Desert Warrior,NA,NA,NA,NA,NA,NA,NA,NA,NA
+629, The Deliverance,NA,NA,NA,NA,NA,NA,NA,NA,NA
+630, Blood Knot,NA,NA,NA,NA,NA,NA,NA,NA,NA
+631, Flash Before the Bang,NA,NA,NA,NA,NA,NA,NA,NA,NA
+632, The Book of Mormon,NA,NA,NA,NA,NA,NA,NA,NA,NA
+633, The Room Returns!,NA,NA,NA,NA,NA,NA,NA,NA,NA
+634, The Lego Batman Movie 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+635, The Boondock Saints III,NA,NA,NA,NA,NA,NA,NA,NA,NA
+636, East of Eden,NA,NA,NA,NA,NA,NA,NA,NA,NA
+637, Classified,NA,NA,NA,NA,NA,NA,NA,NA,NA
+638, The Gettysburg Address,NA,NA,NA,NA,NA,2025,NA,NA,NA
+639, Cowboy Ninja Viking,NA,NA,NA,NA,NA,NA,NA,NA,NA
+640, Firecracker,9.2,12.0,NA,NA,15,2024,1h 47m,NA,NA
+641, Ghost of Tsushima,NA,NA,NA,NA,NA,NA,NA,NA,NA
+642, Wicker,NA,NA,NA,NA,NA,NA,NA,NA,NA
+643, Alternate,NA,NA,NA,NA,NA,2024,NA,NA,NA
+644, Armor Wars,NA,NA,NA,NA,NA,NA,NA,NA,NA
+645, Matt and Mara,7.0,20.0,NA,NA,NA,2024,1h 20m,NA,NA
+646, The Invite,NA,NA,NA,NA,NA,NA,NA,NA,NA
+647, Johnny English 4,NA,NA,NA,NA,NA,NA,NA,NA,NA
+648, Time Cut,NA,NA,NA,NA,NA,2024,1h 35m,NA,NA
+649, The Collector 3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+650, Pokémon Detective Pikachu Sequel,NA,NA,NA,NA,NA,NA,NA,NA,NA
+651, The Greatest,NA,NA,NA,NA,NA,1h 54m,NA,NA,NA
+652, William Tell,NA,NA,NA,NA,NA,NA,NA,NA,NA
+653, Girl in the Video,5.7,124.0,NA,NA,TV-14,2024,1h 27m,NA,NA
+654, BioShock,NA,NA,NA,NA,NA,NA,NA,NA,NA
+655, Repo Man 2: The Wages of Beer,NA,NA,NA,NA,NA,NA,NA,NA,NA
+656, Untitled Rebuilding Project,NA,NA,NA,NA,NA,NA,NA,NA,NA
+657, Last Friday,NA,NA,NA,NA,NA,NA,NA,NA,NA
+658, Kiss of the Spider Woman,NA,NA,NA,NA,NA,NA,NA,NA,NA
+659, Untitled Fred Astaire Biopic,NA,NA,NA,NA,NA,NA,NA,NA,NA
+660, Better Man,NA,NA,NA,NA,NA,2025,NA,NA,NA
+661, Mercy,NA,NA,NA,NA,NA,NA,NA,NA,NA
+662, The King's Man: The Traitor King,NA,NA,NA,NA,NA,NA,NA,NA,NA
+663, The Girls I've Been,NA,NA,NA,NA,NA,NA,NA,NA,NA
+664, Merv,NA,NA,NA,NA,NA,NA,NA,NA,NA
+665, The Greatest Hits,NA,NA,NA,NA,PG-13,2024,1h 27m,NA,NA
+666, Juliet,NA,NA,NA,NA,NA,NA,NA,NA,NA
+667, Nutcrackers,NA,NA,NA,NA,NA,NA,NA,NA,NA
+668, Berlin Nobody,NA,NA,NA,NA,NA,2024,NA,NA,NA
+669, The Council,NA,NA,NA,NA,NA,NA,NA,NA,NA
+670, Peter Rabid,NA,NA,NA,NA,NA,2024,NA,NA,NA
+671, Magpie,NA,NA,NA,NA,R,2024,1h 30m,NA,NA
+672, Rainbow Six,NA,NA,NA,NA,NA,NA,NA,NA,NA
+673, DreamScapes,NA,NA,NA,NA,NA,2024,1h 25m,NA,NA
+674, Extraction 3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+675, IJ Inspector Jamshed,NA,NA,NA,NA,NA,2024,2h,NA,NA
+676, Nonnas,NA,NA,NA,NA,NA,NA,NA,NA,NA
+677, The Tom and Jerry Show Movie - The Origin of Tom the Human Boy Become Cat and Jerry the Rabbit Become Mouse,NA,NA,NA,NA,NA,2024,1h 37m,NA,NA
+678, 2024 Oscar Nominated Short Films: Live Action,7.3,20.0,NA,NA,NA,2024,2h 19m,NA,NA
+679, Strawweight,NA,NA,NA,NA,NA,NA,NA,NA,NA
+680, Harvest,NA,NA,NA,NA,NA,NA,NA,NA,NA
+681, Canary Black,NA,NA,NA,NA,NA,NA,NA,NA,NA
+682, Halo,NA,NA,NA,NA,NA,NA,NA,NA,NA
+683, Untitled Yorgos Lanthimos Remake Project,NA,NA,NA,NA,NA,NA,NA,NA,NA
+684, Super/Man: The Christopher Reeve Story,7.8,32.0,86,Documentary,NA,2024,1h 46m,Christopher Reeve,Ian BonhôtePeter Ettedgui
+685, The Substance,NA,NA,NA,NA,NA,NA,NA,NA,NA
+686, Ultraman: Rising,NA,NA,NA,NA,PG,2024,1h 57m,NA,NA
+687, Gore,NA,NA,NA,NA,NA,NA,NA,NA,NA
+688, Sacred Soil: The Piney Woods School Story,5.6,26.0,NA,NA,NA,2024,NA,NA,NA
+689, Scary Stories to Tell in the Dark 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+690, War Game,7.9,17.0,NA,NA,NA,2024,1h 34m,NA,NA
+691, The Creep,5.5,24.0,NA,NA,NA,2024,2h 9m,NA,NA
+692, Robopocalypse,NA,NA,NA,NA,NA,NA,NA,NA,NA
+693, Untitled Margot Robbie Ocean's Eleven Film,NA,NA,NA,NA,NA,NA,NA,NA,NA
+694, Jackpot,NA,NA,NA,NA,NA,NA,NA,NA,NA
+695, Lando,NA,NA,NA,NA,NA,NA,NA,NA,NA
+696, The Raid,NA,NA,NA,NA,NA,NA,NA,NA,NA
+697," I, Object",NA,NA,NA,NA,NA,NA,NA,NA,NA
+698, Apartment 7A,NA,NA,NA,NA,NA,NA,NA,NA,NA
+699, McCarthy,NA,NA,NA,NA,NA,NA,NA,NA,NA
+700, Flint Strong,NA,NA,NA,NA,NA,2024,PG-13,NA,NA
+701, The Epidemic,6.4,50.0,NA,NA,NA,2024,1h 35m,NA,NA
+702, Long Gone Heroes,NA,NA,NA,NA,NA,NA,NA,NA,NA
+703, Sight,NA,NA,NA,NA,NA,2024,PG-13,NA,NA
+704," Die, My Love",NA,NA,NA,NA,NA,NA,NA,NA,NA
+705, Séance Games: Metaxu,7.7,29.0,NA,NA,NA,2024,NA,NA,NA
+706, Trigger Warning,NA,NA,NA,NA,NA,1h 26m,NA,NA,NA
+707, Last Night at Terrace Lanes,6.1,66.0,NA,NA,NA,2024,NA,NA,NA
+708, Afterburn,NA,NA,NA,NA,NA,NA,NA,NA,NA
+709, Twilight of the Mallrats,NA,NA,NA,NA,NA,NA,NA,NA,NA
+710, Good Bad Things,9.6,5.0,NA,NA,NA,2024,NA,NA,NA
+711, Inheritance to Love,9.5,24.0,NA,NA,NA,2024,1h 28m,NA,NA
+712, Queen Rock Montreal,8.7,192.0,NA,NA,NA,2024,1h 35m,NA,NA
+713, Cash Out 2: High Rollers,NA,NA,NA,NA,NA,NA,NA,NA,NA
+714, Sebastian,6.9,52.0,NA,NA,NA,2024,1h 50m,NA,NA
+715, Untitled Fast & Furious Film,NA,NA,NA,NA,NA,NA,NA,NA,NA
+716, Exhibiting Forgiveness,7.5,85.0,81,Drama,NA,2024,1h 57m,"André Holland, John Earl Jelks, Andra Day, Aunjanue Ellis-Taylor",Titus Kaphar
+717, Star Wars: Dawn of the Jedi,NA,NA,NA,NA,NA,NA,NA,NA,NA
+718, Sue,NA,NA,NA,NA,NA,NA,NA,NA,NA
+719, G20,NA,NA,NA,NA,NA,NA,NA,NA,NA
+720, Riff Raff,NA,NA,NA,NA,NA,NA,NA,NA,NA
+721, Big City Greens: The Movie,NA,NA,NA,NA,NA,2024,TV-Y7,NA,NA
+722, What Remains of Us,NA,NA,NA,NA,NA,NA,NA,NA,NA
+723, Candlewood,8.3,12.0,NA,NA,NA,2024,NA,NA,NA
+724, Jacqueline Novak: Get on Your Knees,6.5,552.0,NA,NA,NA,2024,1h 34m,NA,NA
+725, Lips Like Sugar,NA,NA,NA,NA,NA,NA,NA,NA,NA
+726, The Silent Hour,NA,NA,NA,NA,NA,2024,NA,NA,NA
+727, The Billionaire's Accidental Bride,NA,NA,NA,NA,NA,NA,NA,NA,NA
+728, A Cold Grave,4.4,171.0,NA,NA,NA,2024,NA,NA,NA
+729, Keeper of the Lost Cities,NA,NA,NA,NA,NA,NA,NA,NA,NA
+730, The Room Next Door,NA,NA,NA,NA,NA,NA,NA,NA,NA
+731, District 10,NA,NA,NA,NA,NA,NA,NA,NA,NA
+732, Relapse,NA,NA,NA,NA,NA,NA,NA,NA,NA
+733, Everything's Going to Be Great,NA,NA,NA,NA,NA,NA,NA,NA,NA
+734, June and John,NA,NA,NA,NA,NA,2024,NA,NA,NA
+735, Omni Loop,NA,NA,NA,NA,NA,2024,1h 47m,NA,NA
+736, London Calling,NA,NA,NA,NA,NA,NA,NA,NA,NA
+737, Lunar Lockdown,3.9,25.0,NA,NA,NA,2024,NA,NA,NA
+738, Being Mortal,NA,NA,NA,NA,NA,NA,NA,NA,NA
+739, The Thing About Jellyfish,NA,NA,NA,NA,NA,NA,NA,NA,NA
+740, Hitpig,NA,NA,NA,NA,TV-Y7,2024,1h 26m,NA,NA
+741, War Party,NA,NA,NA,NA,NA,NA,NA,NA,NA
+742, The Amazing World of Gumball: The Movie,NA,NA,NA,NA,NA,2024,NA,NA,NA
+743, Mace,NA,NA,NA,NA,NA,NA,NA,NA,NA
+744, Tyger,8.6,10.0,NA,NA,NA,2024,1h 32m,NA,NA
+745, Wilder & Me,NA,NA,NA,NA,NA,NA,NA,NA,NA
+746, The Fisherwoman,NA,NA,NA,NA,NA,NA,NA,NA,NA
+747, xXx 4,NA,NA,NA,NA,NA,NA,NA,NA,NA
+748, Bad Seeds of Loving Spring,NA,NA,NA,NA,NA,NA,NA,NA,NA
+749, Palette,NA,NA,NA,NA,NA,NA,NA,NA,NA
