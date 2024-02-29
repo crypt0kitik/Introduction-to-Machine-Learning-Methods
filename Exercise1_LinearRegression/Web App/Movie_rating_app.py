@@ -34,6 +34,8 @@ lm = load("Movie_rating_model.pkl")
 
 # the model works correctly!
 
+################
+
 # PART 3: development of the web application
 
 # import moduls
@@ -41,78 +43,68 @@ import tkinter as tk
 import tkinter.ttk as ttk
 import os
 import random
+from tkinter import *
+from PIL import ImageTk, Image
+
+
 
 # create window
 root = tk.Tk()
 root.title("Movie rating")
-#root.geometry("1200x900")
+root.geometry("1200x900")
 #root.configure(bg="black")
 
-############################
-
-# Load images and get their dimensions
-# Assuming the images are in the same directory as your script
-script_dir = os.path.dirname(os.path.realpath(__file__))
-image_files = [os.path.join(script_dir, "image1.png"), os.path.join(script_dir, "image2.png")]
-
-# Define a Canvas widget
-canvas = canvas(win, width=600, height=400, bg="white")
-canvas.pack(pady=20)
-
-# Add Images to Canvas widget
-image = ImageTk.PhotoImage(Image.open('favicon.ico'))
-img = canvas.create_image(250, 120, anchor=NW, image=image)
-
-def left(e):
-   x = -20
-   y = 0
-   canvas.move(img, x, y)
-
-def right(e):
-   x = 20
-   y = 0
-   canvas.move(img, x, y)
-
-def up(e):
-   x = 0
-   y = -20
-   canvas.move(img, x, y)
-
-def down(e):
-   x = 0
-   y = 20
-   canvas.move(img, x, y)
-
-# Bind the move function
-win.bind("<Left>", left)
-win.bind("<Right>", right)
-win.bind("<Up>", up)
-win.bind("<Down>", down)
-
-
-
-
-
-
-
-
-
-
-##########################
-
 # A widget used to display text on the screen
-text = tk.Label(
-    text="Imagine that you want to make a famous movie \n but beforehand you want to see whether this movie will be famous",
-    foreground="white",  # Set the text color to white
-    font= ('Aerial', 17)
+#text = tk.Label(
+   # text="Imagine that you want to make a famous movie \n but beforehand you want to see whether this movie will be famous",
+    #foreground="white",  # Set the text color to white
+   # font= ('Aerial', 17)
     #background="black",  # Set the background color to black
     #width = 10,
     #height = 10
-)
-text.pack()
+#)
+#text.pack()
 
-entry = tk.Entry(fg="yellow", bg="white", width=50)
-entry.pack()
+
+# Load images for frames
+image_paths = ["image1.png", "image2.png", "image3.png"]
+photos = [None] * len(image_paths)
+
+# loop all images
+for i, image_path in enumerate(image_paths):
+    image = Image.open(image_path)
+    # Resize the image to fit the dimensions of the corresponding frame
+    if i == 0:
+        image = image.resize((200, 100), Image.ANTIALIAS)
+    elif i == 1:
+        image = image.resize((100, 100), Image.ANTIALIAS)
+    elif i == 2:
+        image = image.resize((50, 100), Image.ANTIALIAS)
+    photos[i] = ImageTk.PhotoImage(image)
+
+# Create frames with image backgrounds
+frames = []
+for i, photo in enumerate(photos):
+    frame = tk.Frame(master=root, width=(i+1)*50+150, height=100)
+    frame.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
+    background_label = tk.Label(frame, image=photo)
+    background_label.place(x=0, y=0, relwidth=1, relheight=1)
+    frames.append(frame)
+
+def change_images():
+    global photos
+    for i, frame in enumerate(frames):
+        new_photo_index = (i + 1) % len(image_paths)
+        new_photo = photos[new_photo_index]
+        frame_background_label = frame.winfo_children()[0]  # Get the background label of the frame
+        frame_background_label.configure(image=new_photo)
+        frame_background_label.image = new_photo  # Keep a reference to avoid garbage collection
+    root.after(2000, change_images)
+
+root.after(2000, change_images)  # Start changing images after 2 seconds
+
+##########################
+
 
 # to run the Tkinter event loop. This method
 # listens for events, such as button clicks or keypresses,
