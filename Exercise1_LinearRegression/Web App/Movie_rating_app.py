@@ -38,6 +38,7 @@ lm = load("Movie_rating_model.pkl")
 
 # PART 3: development of the web application
 
+# TEST
 # import moduls
 import tkinter as tk
 import tkinter.ttk as ttk
