@@ -38,7 +38,6 @@ lm = load("Movie_rating_model.pkl")
 
 # PART 3: development of the web application
 
-# TEST
 # import moduls
 import tkinter as tk
 import tkinter.ttk as ttk
@@ -50,10 +49,9 @@ from PIL import ImageTk, Image
 
 
 # create window
-root = tk.Tk()
-root.title("Movie rating")
-root.geometry("1200x900")
-#root.configure(bg="black")
+window = tk.Tk()
+window.title("Movie rating")
+window.geometry("1200x900")
 
 # A widget used to display text on the screen
 #text = tk.Label(
@@ -77,28 +75,28 @@ image3 = Image.open("image3.png")
 photo3 = ImageTk.PhotoImage(image3)
 
 # Frame 1 with image background
-frame1 = tk.Frame(master=root, width=200, height=100)
+frame1 = tk.Frame(master=window, width=200, height=100)
 frame1.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
 background_label1 = tk.Label(frame1, image=photo1)
 background_label1.place(x=0, y=0, relwidth=1, relheight=1)
 
 # Frame 2 with image background
-frame2 = tk.Frame(master=root, width=100)
+frame2 = tk.Frame(master=window, width=200, height=100)
 frame2.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
 background_label2 = tk.Label(frame2, image=photo2)
 background_label2.place(x=0, y=0, relwidth=1, relheight=1)
 
 # Frame 3 with image background
-frame3 = tk.Frame(master=root, width=50)
+frame3 = tk.Frame(master=window, width=200, height=100)
 frame3.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
 background_label3 = tk.Label(frame3, image=photo3)
 background_label3.place(x=0, y=0, relwidth=1, relheight=1)
 
-##########################
-
+label2 = tk.Label(master=window, text="I'm at (75, 75)")
+label2.place(x=75, y=75)
 
 # to run the Tkinter event loop. This method
 # listens for events, such as button clicks or keypresses,
 # and blocks any code that comes after it from running
 # until you close the window where you called the method.
-root.mainloop()
+window.mainloop()
