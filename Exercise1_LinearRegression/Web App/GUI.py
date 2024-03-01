@@ -12,8 +12,10 @@ customtkinter.set_appearance_mode("dark")
 root = customtkinter.CTk()
 root.geometry("700x400")
 
+# open the image
 image = PIL.Image.open("Image.png")
 background_image = customtkinter.CTkImage(image, size=(700, 400))
+
 # Define a function to resize the image
 def resize_image(event=None):
     new_width = root.winfo_width()
@@ -40,19 +42,33 @@ text_label = tk.Label(root, text="Imagine that you want to develop a movie, \n b
                       font=("Helvetica", 22), fg="white", bg="black")  # Set background to transparent
 text_label.place(relx=0.5, rely=0.1, anchor="center")
 
-################
+# Create a new frame `frm_form` to contain the Label and Entry widgets
+frm_form = tk.Frame(relief=tk.SUNKEN, borderwidth=3)
+frm_form.place(relx=0.5, rely=0.25, anchor="center")
+
+# Create the Label and Entry widgets for the first question
+lbl_first_question = tk.Label(master=frm_form, text="In which year you want to publish your movie?")
+ent_first_question = tk.Entry(master=frm_form)
+lbl_first_question.grid(row=0, column=0, sticky="e")
+ent_first_question.grid(row=0, column=1)
+
 optionmenu_var = customtkinter.StringVar(value="option 2")  # set initial value
+
+# button to choose - combobox
 def optionmenu_callback(choice):
     print("optionmenu dropdown clicked:", choice)
 
 combobox = customtkinter.CTkOptionMenu(master=root,
-                                       values=["option 1", "option 2"],
+                                       fg_color=("black"),
+                                       bg_color=("black"),
+                                       values=["option 1", "option 2", "option 3"],
                                        command=optionmenu_callback,
                                        variable=optionmenu_var)
-combobox.pack(padx=20, pady=80)
 
-#########
-button = customtkinter.CTkButton(master=root, text="Check potential rating")
+combobox.place(relx=0.5, rely=0.35, anchor="center")
+
+# button to submit and calculate the result
+button = customtkinter.CTkButton(master=root, fg_color=("black"), text="Check potential rating")
 button.place(relx=0.5, rely=0.5, anchor=CENTER)
 
 
