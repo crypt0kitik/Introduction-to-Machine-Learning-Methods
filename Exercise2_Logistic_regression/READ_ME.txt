@@ -25,3 +25,4 @@ Logistic regression part:
 17. Classification error metrics
 18. Testing the model with new data
 19. Saving a trained scikit-learn model into a file
+20. Analysis
