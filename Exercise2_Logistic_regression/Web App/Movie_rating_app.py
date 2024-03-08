@@ -98,4 +98,5 @@ button = customtkinter.CTkButton(master=window, text="Check potential rating")
 button.place(relx=0.5, rely=0.3, anchor=CENTER)
 # and blocks any code that comes after it from running
 # until you close the window where you called the method.
+
 window.mainloop()
