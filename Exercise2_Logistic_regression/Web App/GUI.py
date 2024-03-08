@@ -18,17 +18,17 @@ lm = load("logmodel.joblib")
 #     'job': 2,
 #     'marital': 1,
 #     'education': 2,
-#     'default': 1,
+#     'failed_previous_credit': 1,
 #     'balance': 5000,
-#     'housing': 0,
+#     'housing_loan': 0,
 #     'loan': 0,
-#     'contact': 1,
+#     'contact_type': 1,
 #     'day': 5,
 #     'month': 2,
-#     'duration': 120,
-#     'campaign': 1,
-#     'pdays': -1,
-#     'previous': 0,
+#     'contact_duration_sec': 120,
+#     'number_of_contacts': 1,
+#     'days_since_last_contact': -1,
+#     'previous_number_of_contacts': 0,
 #     'poutcome': 3,
 # }
 #
@@ -55,7 +55,7 @@ root.geometry("700x400")
 
 # PART 2.1: setting the background image
 # open the image
-image = PIL.Image.open("backimage.jpg")
+image = PIL.Image.open("bg_image.png")
 background_image = customtkinter.CTkImage(image, size=(1200, 900))
 
 # Define a function to resize the background image
@@ -101,8 +101,8 @@ ent_age.grid(row=0, column=1)
 ent_age.bind("<Return>", lambda event: print("Age entered:", ent_age.get()))
 
 # PART 2.3: Choose a client's marital status
-marital_label_text = tk.Label(root, text="Choose marital status", font=("Helvetica", 16), fg="white", bg="black")
-marital_label_text.place(relx=0.35, rely=0.35, anchor="center")
+# marital_label_text = tk.Label(root, text="Choose marital status", font=("Helvetica", 16), fg="white", bg="black")
+# marital_label_text.place(relx=0.35, rely=0.35, anchor="center")
 
 marital_status = customtkinter.StringVar(value="divorced")  # set initial value
 
@@ -110,37 +110,76 @@ marital_status = customtkinter.StringVar(value="divorced")  # set initial value
 def marital_status_callback(choice):
     print("Marital status choice:", choice)
 
-combobox = customtkinter.CTkOptionMenu(master=root,
+marital_combobox = customtkinter.CTkOptionMenu(master=root,
                                        fg_color=("black"),
                                        bg_color=("black"),
                                        values=["divorced", "married", "single", "unknown"],
                                        command=marital_status_callback,
                                        variable=marital_status)
 
-combobox.place(relx=0.35, rely=0.45, anchor="center")
+marital_combobox.place(relx=0.35, rely=0.35, anchor="center")
 
 # PART 2.4:Choose a client's education
-edu_label_text = tk.Label(root, text="Choose education level", font=("Helvetica", 16), fg="white", bg="black")
-edu_label_text.place(relx=0.65, rely=0.35, anchor="center")
+# edu_label_text = tk.Label(root, text="Choose education level", font=("Helvetica", 16), fg="white", bg="black")
+# edu_label_text.place(relx=0.65, rely=0.35, anchor="center")
 education = customtkinter.StringVar(value="primary")  # set initial value
 
 # button to choose - combobox
 def education_callback(choice):
     print("Education choice:", choice)
 
-combobox = customtkinter.CTkOptionMenu(master=root,
+education_combobox = customtkinter.CTkOptionMenu(master=root,
                                        fg_color=("black"),
                                        bg_color=("black"),
                                        values=["primary", "secondary", "tertiary", "unknown"],
                                        command=education_callback,
                                        variable=education)
 
-combobox.place(relx=0.65, rely=0.45, anchor="center")
-
+education_combobox.place(relx=0.65, rely=0.35, anchor="center")
 
 # PART 2.4: Click "yes", if the client has deposit default
+def default_checkbox_event():
+    print("checkbox toggled, current value:", default_check_var.get())
 
+default_check_var = customtkinter.StringVar(value="on")
+default_checkbox = customtkinter.CTkCheckBox(root, text="Client has deposit default", command=default_checkbox_event,
+                                     variable=default_check_var, onvalue="on", offvalue="off")
 
+default_checkbox.place(relx=0.35, rely=0.45, anchor="center")
+
+# PART 2.5: Click "yes", if the client has housing loan
+def housing_checkbox_event():
+    print("checkbox toggled, current value:", housing_check_var.get())
+
+housing_check_var = customtkinter.StringVar(value="on")
+housing_checkbox = customtkinter.CTkCheckBox(root, text="Client has housing loan", command=housing_checkbox_event,
+                                     variable=housing_check_var, onvalue="on", offvalue="off")
+
+housing_checkbox.place(relx=0.65, rely=0.45, anchor="center")
+
+# PART 2.6: Question "What is the client's balance?"
+# Create a new frame `age_form` to contain the Label and Entry widgets
+balance_form = tk.Frame(relief=tk.SUNKEN, borderwidth=3)
+balance_form.place(relx=0.5, rely=0.55, anchor="center")
+
+# Create the Label and Entry widgets for the first question
+lbl_balance = tk.Label(master=balance_form, text="What is the client's balance?")
+ent_balance = tk.Entry(master=balance_form)
+lbl_balance.grid(row=0, column=0, sticky="e")
+ent_balance.grid(row=0, column=1)
+
+# Bind the <Return> event to the ent_age Entry widget
+ent_balance.bind("<Return>", lambda event: print("Age entered:", ent_age.get()))
+
+# PART 2.7: Question "Does the client's have a personal loan?"
+def personal_loan_checkbox_event():
+    print("checkbox toggled, current value:", personal_loan_check_var.get())
+
+personal_loan_check_var = customtkinter.StringVar(value="on")
+personal_loan_checkbox = customtkinter.CTkCheckBox(root, text="Client has housing loan", command=personal_loan_checkbox_event,
+                                     variable=personal_loan_check_var, onvalue="on", offvalue="off")
+
+personal_loan_checkbox.place(relx=0.35, rely=0.65, anchor="center")
 
 # Function for collecting user responses and making predictions
 def set_text_by_button():
@@ -153,7 +192,7 @@ def set_text_by_button():
     # Create a DataFrame with user responses
     user_data = {
         'age': [age],
-        'marital_status': [marital_status],
+        'marital': [marital_status],
         'education': [education],
         # Other client characteristics...
     }
