@@ -244,7 +244,13 @@ month_combobox = customtkinter.CTkOptionMenu(master=root,
 
 month_combobox.place(relx=0.65, rely=0.75, anchor="center")
 
+#     'contact_duration_sec': SLIDER,
+#     'number_of_contacts': SLIDER
 
+#     'days_since_last_contact': TEXT
+#     'previous_number_of_contacts': TEXT
+
+#     'poutcome': OPTION
 
 
 
