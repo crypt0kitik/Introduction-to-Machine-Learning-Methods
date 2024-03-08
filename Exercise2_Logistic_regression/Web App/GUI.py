@@ -55,7 +55,7 @@ root.geometry("700x400")
 
 # PART 2.1: setting the background image
 # open the image
-image = PIL.Image.open("backimage.jpg")
+image = PIL.Image.open("bg_image.png")
 background_image = customtkinter.CTkImage(image, size=(1200, 900))
 
 # Define a function to resize the background image
