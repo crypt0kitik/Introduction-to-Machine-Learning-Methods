@@ -56,7 +56,7 @@ root.geometry("700x400")
 # PART 2.1: setting the background image
 # open the image
 image = PIL.Image.open("backimage.jpg")
-background_image = customtkinter.CTkImage(image, size=(700, 400))
+background_image = customtkinter.CTkImage(image, size=(1200, 900))
 
 # Define a function to resize the background image
 def resize_image(event=None):
@@ -87,102 +87,90 @@ text_label = tk.Label(root, text="Let's check whether a customer takes deposit o
 text_label.place(relx=0.5, rely=0.1, anchor="center")
 
 # PART 2.3: question "How old is the client?"
-# Create a new frame `frm_form` to contain the Label and Entry widgets
-frm_form = tk.Frame(relief=tk.SUNKEN, borderwidth=3)
-frm_form.place(relx=0.5, rely=0.25, anchor="center")
+# Create a new frame `age_form` to contain the Label and Entry widgets
+age_form = tk.Frame(relief=tk.SUNKEN, borderwidth=3)
+age_form.place(relx=0.5, rely=0.25, anchor="center")
 
 # Create the Label and Entry widgets for the first question
-lbl_first_question = tk.Label(master=frm_form, text="How old is the client?")
-ent_first_question = tk.Entry(master=frm_form)
-lbl_first_question.grid(row=0, column=0, sticky="e")
-ent_first_question.grid(row=0, column=1)
+lbl_age = tk.Label(master=age_form, text="How old is the client?")
+ent_age = tk.Entry(master=age_form)
+lbl_age.grid(row=0, column=0, sticky="e")
+ent_age.grid(row=0, column=1)
+
+# Bind the <Return> event to the ent_age Entry widget
+ent_age.bind("<Return>", lambda event: print("Age entered:", ent_age.get()))
 
 # PART 2.3: Choose a client's marital status
-optionmenu_var = customtkinter.StringVar(value="divorced")  # set initial value
+marital_label_text = tk.Label(root, text="Choose marital status", font=("Helvetica", 16), fg="white", bg="black")
+marital_label_text.place(relx=0.35, rely=0.35, anchor="center")
+
+marital_status = customtkinter.StringVar(value="divorced")  # set initial value
 
 # button to choose - combobox
-def optionmenu_callback(choice):
-    print("optionmenu dropdown clicked:", choice)
+def marital_status_callback(choice):
+    print("Marital status choice:", choice)
 
 combobox = customtkinter.CTkOptionMenu(master=root,
                                        fg_color=("black"),
                                        bg_color=("black"),
                                        values=["divorced", "married", "single", "unknown"],
-                                       command=optionmenu_callback,
-                                       variable=optionmenu_var)
+                                       command=marital_status_callback,
+                                       variable=marital_status)
 
-combobox.place(relx=0.5, rely=0.35, anchor="center")
+combobox.place(relx=0.35, rely=0.45, anchor="center")
 
 # PART 2.4:Choose a client's education
-optionmenu_var = customtkinter.StringVar(value="primary")  # set initial value
+edu_label_text = tk.Label(root, text="Choose education level", font=("Helvetica", 16), fg="white", bg="black")
+edu_label_text.place(relx=0.65, rely=0.35, anchor="center")
+education = customtkinter.StringVar(value="primary")  # set initial value
 
 # button to choose - combobox
-def optionmenu_callback(choice):
-    print("optionmenu dropdown clicked:", choice)
+def education_callback(choice):
+    print("Education choice:", choice)
 
 combobox = customtkinter.CTkOptionMenu(master=root,
                                        fg_color=("black"),
                                        bg_color=("black"),
                                        values=["primary", "secondary", "tertiary", "unknown"],
-                                       command=optionmenu_callback,
-                                       variable=optionmenu_var)
+                                       command=education_callback,
+                                       variable=education)
 
-combobox.place(relx=0.5, rely=0.45, anchor="center")
-
-
+combobox.place(relx=0.65, rely=0.45, anchor="center")
 
 
-
+# PART 2.4: Click "yes", if the client has deposit default
 
 
 
-
-# the function that is run when button is pressed
+# Function for collecting user responses and making predictions
 def set_text_by_button():
+    # Collect user data
+    age = int(ent_age.get())
+    marital_status = marital_status.get()
+    education = education.get()
+    # Other client characteristics to collect...
 
-    # sample_text.get() contains the value in the textbox
-
-    # inform the user if they provided wrong kind of data
-    if not ent_first_question.get().isnumeric():
-        result_var.set("Incorrect value, use integers.")
-        ent_first_question.configure(foreground="red")
-    else:
-        ent_first_question.configure(foreground="black")
-
-    # convert textbox value into integer if possible
-    test_age = int(ent_first_question.get())
-
-    # let's convert the user input into the
-    # format that our model understands
-    tester_row = {
-        'age': test_age
+    # Create a DataFrame with user responses
+    user_data = {
+        'age': [age],
+        'marital_status': [marital_status],
+        'education': [education],
+        # Other client characteristics...
     }
+    user_df = pd.DataFrame(user_data)
 
-    # convert to pandas-format
-    tester_row = pd.DataFrame([tester_row])
+    # Predict using logistic regression
+    prediction = lm.predict(user_df)
 
-    # use our model to predict our tester_row data
-    result = lm.predict(tester_row)[0]
+    # Display the prediction result
+    if prediction == 1:
+        result_var.set("This client will take a deposit.")
+    else:
+        result_var.set("This client will not take a deposit.")
 
-    # set the result into the Label in the window
-    result_var.set(f"Does this customer take a deposit: {round(float(result), 2)} $")
+# Define and configure the button to initiate prediction
+set_up_button = tkinter.Button(root, height=1, width=16, text="Check the client", command=set_text_by_button)
+set_up_button.pack(side="bottom", pady=20)
 
-
-# helper function that allows us to press Enter to launch
-# the button press function
-def handle_enter(event):
-    set_text_by_button()
-
-
-# bind Enter-key from keyboard to helper function
-root.bind("<Return>", handle_enter)
-
-# Setting up the button, set_text_by_button()
-# is passed as a command
-set_up_button = tkinter.Button(root, height=1, width=16, text="Check the client",
-                               command=set_text_by_button)
-
-#set_up_button.place(relx=0.5, rely=1.9, anchor="center")
-set_up_button.pack(pady=230)
-
+# Start the main event loop
 root.mainloop()
