@@ -103,21 +103,28 @@ ent_age.bind("<Return>", lambda event: print("Age entered:", ent_age.get()))
 # PART 2.3: Choose a client's marital status
 # marital_label_text = tk.Label(root, text="Choose marital status", font=("Helvetica", 16), fg="white", bg="black")
 # marital_label_text.place(relx=0.35, rely=0.35, anchor="center")
-
 marital_status = customtkinter.StringVar(value="divorced")  # set initial value
 
+def convert_to_numeric(status):
+    statuses = ["divorced", "married", "single"]
+    return statuses.index(status) + 1
+
 # button to choose - combobox
-def marital_status_callback(choice):
-    print("Marital status choice:", choice)
+def marital_status_callback(*args):
+    selected_status = marital_status.get()
+    numeric_marital_status = convert_to_numeric(selected_status)
+    print("Numeric marital status:", numeric_marital_status)
 
 marital_combobox = customtkinter.CTkOptionMenu(master=root,
                                        fg_color=("black"),
                                        bg_color=("black"),
-                                       values=["divorced", "married", "single", "unknown"],
+                                       values=["divorced", "married", "single"],
                                        command=marital_status_callback,
                                        variable=marital_status)
 
 marital_combobox.place(relx=0.35, rely=0.35, anchor="center")
+
+
 
 # PART 2.4:Choose a client's education
 # edu_label_text = tk.Label(root, text="Choose education level", font=("Helvetica", 16), fg="white", bg="black")
@@ -180,6 +187,73 @@ personal_loan_checkbox = customtkinter.CTkCheckBox(root, text="Client has housin
                                      variable=personal_loan_check_var, onvalue="on", offvalue="off")
 
 personal_loan_checkbox.place(relx=0.35, rely=0.65, anchor="center")
+
+# PART 2.8: Question "What was the contact method?"
+contact_method = customtkinter.StringVar(value="telephone")  # set initial value
+def contact_method_callback(choice):
+    print("Contact method choice:", choice)
+
+contact_method_combobox = customtkinter.CTkOptionMenu(master=root,
+                                       fg_color=("black"),
+                                       bg_color=("black"),
+                                       values=["cellular", "telephone", "unknown"],
+                                       command=contact_method_callback,
+                                       variable=contact_method)
+
+contact_method_combobox.place(relx=0.65, rely=0.65, anchor="center")
+
+# PART 2.9: Question "What a day of week it was?"
+day_of_week = customtkinter.StringVar(value="Monday")  # set initial value
+# convert the choice to numeric
+def convert_to_numeric(day):
+    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    return days.index(day) + 1
+def day_of_week_callback(choice):
+    numeric_day = convert_to_numeric(choice)
+    print("Numeric day of the week:", numeric_day)
+
+day_of_week_combobox = customtkinter.CTkOptionMenu(master=root,
+                                       fg_color=("black"),
+                                       bg_color=("black"),
+                                       values=["Monday", "Tuesday", "Wednesday", "Thursday",
+                                               "Friday", "Saturday", "Sunday"],
+                                       command=day_of_week_callback,
+                                       variable=day_of_week)
+
+day_of_week_combobox.place(relx=0.35, rely=0.75, anchor="center")
+
+# PART 2.9: Question "What a month it was?"
+month = customtkinter.StringVar(value="January")  # set initial value
+# convert the choice to numeric
+def convert_to_numeric(choisen_month):
+    months = ["January", "February", "March", "April", "May", "June", "July",
+              "August", "September", "October", "November", "December"]
+    return months.index(choisen_month) + 1
+def month_callback(choice):
+    numeric_month = convert_to_numeric(choice)
+    print("Numeric month:", numeric_month)
+
+month_combobox = customtkinter.CTkOptionMenu(master=root,
+                                       fg_color=("black"),
+                                       bg_color=("black"),
+                                       values=["January", "February", "March", "April", "May", "June", "July",
+                                               "August", "September", "October", "November", "December"],
+                                       command=month_callback,
+                                       variable=month)
+
+
+month_combobox.place(relx=0.65, rely=0.75, anchor="center")
+
+
+
+
+
+
+
+
+
+
+
 
 # Function for collecting user responses and making predictions
 def set_text_by_button():
