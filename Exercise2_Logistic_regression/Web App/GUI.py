@@ -82,7 +82,7 @@ resize_image()
 # PART 2.2: adding text about the goal of this GUI
 # place text label
 # the main text
-text_label = tk.Label(root, text="Let's check whether a customer takes deposit or not \n Please, fill in data below",
+text_label = tk.Label(root, text="Let's check whether a customer takes deposit \n Please, fill in data below",
                       font=("Helvetica", 22), fg="white", bg="black")  # Set background to transparent
 text_label.place(relx=0.5, rely=0.1, anchor="center")
 
