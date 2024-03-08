@@ -1,4 +1,8 @@
+# PART 1: Imports, load and test of the model
+
 # import libraries
+from joblib import load
+import pandas as pd
 from tkinter import *
 import customtkinter
 import customtkinter, tkinter
@@ -7,16 +11,54 @@ import PIL
 from PIL import Image
 from PIL import ImageTk
 
+lm = load("logmodel.joblib")
+
+# tester_row = {
+#     'age': 25,
+#     'job': 2,
+#     'marital': 1,
+#     'education': 2,
+#     'default': 1,
+#     'balance': 5000,
+#     'housing': 0,
+#     'loan': 0,
+#     'contact': 1,
+#     'day': 5,
+#     'month': 2,
+#     'duration': 120,
+#     'campaign': 1,
+#     'pdays': -1,
+#     'previous': 0,
+#     'poutcome': 3,
+# }
+#
+# # create a pandas DataFrame and scale the values
+# tester_row = pd.DataFrame([tester_row])
+#
+# print("All probabilities by category:")
+# print(lm.predict_proba(tester_row))
+# print()
+#
+# # change these based on your original data
+# labels = ["No", "Yes"]
+#
+# print("Does this customer take a deposit (Yes/No):")
+# result = labels[logmodel.predict(tester_row)[0]]
+# print(result)
+# print("-------------------")
+
+# PART 2: THE GUI
 # create a window
 customtkinter.set_appearance_mode("dark")
 root = customtkinter.CTk()
 root.geometry("700x400")
 
+# PART 2.1: setting the background image
 # open the image
-image = PIL.Image.open("Image.png")
+image = PIL.Image.open("backimage.jpg")
 background_image = customtkinter.CTkImage(image, size=(700, 400))
 
-# Define a function to resize the image
+# Define a function to resize the background image
 def resize_image(event=None):
     new_width = root.winfo_width()
     new_height = root.winfo_height()
@@ -37,22 +79,26 @@ root.bind("<Configure>", resize_image)
 # Initialize the image size
 resize_image()
 
+# PART 2.2: adding text about the goal of this GUI
 # place text label
-text_label = tk.Label(root, text="Imagine that you want to develop a movie, \n but before you want to know whether the movie is going to be popular",
+# the main text
+text_label = tk.Label(root, text="Let's check whether a customer takes deposit or not \n Please, fill in data below",
                       font=("Helvetica", 22), fg="white", bg="black")  # Set background to transparent
 text_label.place(relx=0.5, rely=0.1, anchor="center")
 
+# PART 2.3: question "How old is the client?"
 # Create a new frame `frm_form` to contain the Label and Entry widgets
 frm_form = tk.Frame(relief=tk.SUNKEN, borderwidth=3)
 frm_form.place(relx=0.5, rely=0.25, anchor="center")
 
 # Create the Label and Entry widgets for the first question
-lbl_first_question = tk.Label(master=frm_form, text="In which year you want to publish your movie?")
+lbl_first_question = tk.Label(master=frm_form, text="How old is the client?")
 ent_first_question = tk.Entry(master=frm_form)
 lbl_first_question.grid(row=0, column=0, sticky="e")
 ent_first_question.grid(row=0, column=1)
 
-optionmenu_var = customtkinter.StringVar(value="option 2")  # set initial value
+# PART 2.3: Choose a client's marital status
+optionmenu_var = customtkinter.StringVar(value="divorced")  # set initial value
 
 # button to choose - combobox
 def optionmenu_callback(choice):
@@ -61,16 +107,82 @@ def optionmenu_callback(choice):
 combobox = customtkinter.CTkOptionMenu(master=root,
                                        fg_color=("black"),
                                        bg_color=("black"),
-                                       values=["option 1", "option 2", "option 3"],
+                                       values=["divorced", "married", "single", "unknown"],
                                        command=optionmenu_callback,
                                        variable=optionmenu_var)
 
 combobox.place(relx=0.5, rely=0.35, anchor="center")
 
-# button to submit and calculate the result
-button = customtkinter.CTkButton(master=root, fg_color=("black"), text="Check potential rating")
-button.place(relx=0.5, rely=0.5, anchor=CENTER)
+# PART 2.4:Choose a client's education
+optionmenu_var = customtkinter.StringVar(value="primary")  # set initial value
+
+# button to choose - combobox
+def optionmenu_callback(choice):
+    print("optionmenu dropdown clicked:", choice)
+
+combobox = customtkinter.CTkOptionMenu(master=root,
+                                       fg_color=("black"),
+                                       bg_color=("black"),
+                                       values=["primary", "secondary", "tertiary", "unknown"],
+                                       command=optionmenu_callback,
+                                       variable=optionmenu_var)
+
+combobox.place(relx=0.5, rely=0.45, anchor="center")
 
 
+
+
+
+
+
+
+
+# the function that is run when button is pressed
+def set_text_by_button():
+
+    # sample_text.get() contains the value in the textbox
+
+    # inform the user if they provided wrong kind of data
+    if not ent_first_question.get().isnumeric():
+        result_var.set("Incorrect value, use integers.")
+        ent_first_question.configure(foreground="red")
+    else:
+        ent_first_question.configure(foreground="black")
+
+    # convert textbox value into integer if possible
+    test_age = int(ent_first_question.get())
+
+    # let's convert the user input into the
+    # format that our model understands
+    tester_row = {
+        'age': test_age
+    }
+
+    # convert to pandas-format
+    tester_row = pd.DataFrame([tester_row])
+
+    # use our model to predict our tester_row data
+    result = lm.predict(tester_row)[0]
+
+    # set the result into the Label in the window
+    result_var.set(f"Does this customer take a deposit: {round(float(result), 2)} $")
+
+
+# helper function that allows us to press Enter to launch
+# the button press function
+def handle_enter(event):
+    set_text_by_button()
+
+
+# bind Enter-key from keyboard to helper function
+root.bind("<Return>", handle_enter)
+
+# Setting up the button, set_text_by_button()
+# is passed as a command
+set_up_button = tkinter.Button(root, height=1, width=16, text="Check the client",
+                               command=set_text_by_button)
+
+#set_up_button.place(relx=0.5, rely=1.9, anchor="center")
+set_up_button.pack(pady=230)
 
 root.mainloop()
