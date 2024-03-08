@@ -4,7 +4,6 @@ This project is ongoing in real-time. I am currently working on it.
 The cleaning data part:
 1. Check all NaN values --> delete if there are 
 2. Check duplicates --> delete if there are 
-----------
 3. Check the job column --> use clustering or other methods to modify it into numeric
 4. marital column --> OneHotEncoder
 5. education column --> OneHotEncoder
@@ -15,7 +14,6 @@ The cleaning data part:
 10. month column --> use clustering or other methods to modify it into numeric
 11. poutcome column --> OneHotEncoder 
 12. deposit column --> LabelEncoder
-----------
 13. Remove outliers by checking balance of these columns
 
 Logistic regression part:
@@ -26,3 +24,6 @@ Logistic regression part:
 18. Testing the model with new data
 19. Saving a trained scikit-learn model into a file
 20. Analysis
+
+GUI (Graphical User Interface):
+1. Imports, load and test of the model
