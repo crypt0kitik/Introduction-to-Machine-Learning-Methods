@@ -53,31 +53,32 @@ customtkinter.set_appearance_mode("dark")
 root = customtkinter.CTk()
 root.geometry("700x400")
 
+
 # PART 2.1: setting the background image
 # open the image
-image = PIL.Image.open("bg_image.png")
-background_image = customtkinter.CTkImage(image, size=(1200, 900))
+# image = PIL.Image.open("bg_image.png")
+# background_image = customtkinter.CTkImage(image, size=(1200, 900))
 
 # Define a function to resize the background image
-def resize_image(event=None):
-    new_width = root.winfo_width()
-    new_height = root.winfo_height()
+# def resize_image(event=None):
+  #  new_width = root.winfo_width()
+  #  new_height = root.winfo_height()
     # if you have issues with ANTIALIAS
     # you need Pillow==9.5.0 version
-    resized_image = image.resize((new_width, new_height), Image.ANTIALIAS)
-    photo = ImageTk.PhotoImage(resized_image)
-    bg_lbl.configure(image=photo)
-    bg_lbl.image = photo  # Keep a reference to avoid garbage collection
+  #  resized_image = image.resize((new_width, new_height), Image.ANTIALIAS)
+  #  photo = ImageTk.PhotoImage(resized_image)
+  #  bg_lbl.configure(image=photo)
+  #  bg_lbl.image = photo  # Keep a reference to avoid garbage collection
 
 # Create a background label with the initial image
-bg_lbl = customtkinter.CTkLabel(root, text="", width=700, height=400)
-bg_lbl.place(x=0, y=0)
+# bg_lbl = customtkinter.CTkLabel(root, text="", width=700, height=400)
+# bg_lbl.place(x=0, y=0)
 
 # Call the resize_image function when the window is resized
-root.bind("<Configure>", resize_image)
+# root.bind("<Configure>", resize_image)
 
 # Initialize the image size
-resize_image()
+# resize_image()
 
 # PART 2.2: adding text about the goal of this GUI
 # place text label
@@ -146,21 +147,21 @@ education_combobox.place(relx=0.65, rely=0.35, anchor="center")
 
 # PART 2.4: Click "yes", if the client has deposit default
 def default_checkbox_event():
-    print("checkbox toggled, current value:", default_check_var.get())
+    print("Deposit default value:", default_check_var.get())
 
 default_check_var = customtkinter.StringVar(value="on")
 default_checkbox = customtkinter.CTkCheckBox(root, text="Client has deposit default", command=default_checkbox_event,
-                                     variable=default_check_var, onvalue="on", offvalue="off")
+                                     variable=default_check_var, onvalue="1", offvalue="0")
 
 default_checkbox.place(relx=0.35, rely=0.45, anchor="center")
 
 # PART 2.5: Click "yes", if the client has housing loan
 def housing_checkbox_event():
-    print("checkbox toggled, current value:", housing_check_var.get())
+    print("Housing loan value:", housing_check_var.get())
 
 housing_check_var = customtkinter.StringVar(value="on")
 housing_checkbox = customtkinter.CTkCheckBox(root, text="Client has housing loan", command=housing_checkbox_event,
-                                     variable=housing_check_var, onvalue="on", offvalue="off")
+                                     variable=housing_check_var, onvalue="1", offvalue="0")
 
 housing_checkbox.place(relx=0.65, rely=0.45, anchor="center")
 
@@ -180,11 +181,11 @@ ent_balance.bind("<Return>", lambda event: print("Balance entered:", ent_balance
 
 # PART 2.7: Question "Does the client's have a personal loan?"
 def personal_loan_checkbox_event():
-    print("checkbox toggled, current value:", personal_loan_check_var.get())
+    print("Personal loan value:", personal_loan_check_var.get())
 
 personal_loan_check_var = customtkinter.StringVar(value="on")
-personal_loan_checkbox = customtkinter.CTkCheckBox(root, text="Client has housing loan", command=personal_loan_checkbox_event,
-                                     variable=personal_loan_check_var, onvalue="on", offvalue="off")
+personal_loan_checkbox = customtkinter.CTkCheckBox(root, text="Client has personal loan", command=personal_loan_checkbox_event,
+                                     variable=personal_loan_check_var, onvalue="1", offvalue="0")
 
 personal_loan_checkbox.place(relx=0.35, rely=0.65, anchor="center")
 
