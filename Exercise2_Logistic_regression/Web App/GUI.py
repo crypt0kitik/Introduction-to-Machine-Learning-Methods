@@ -165,7 +165,7 @@ housing_checkbox = customtkinter.CTkCheckBox(root, text="Client has housing loan
 housing_checkbox.place(relx=0.65, rely=0.45, anchor="center")
 
 # PART 2.6: Question "What is the client's balance?"
-# Create a new frame `age_form` to contain the Label and Entry widgets
+# Create a new frame `balance_form` to contain the Label and Entry widgets
 balance_form = tk.Frame(relief=tk.SUNKEN, borderwidth=3)
 balance_form.place(relx=0.5, rely=0.55, anchor="center")
 
@@ -176,7 +176,7 @@ lbl_balance.grid(row=0, column=0, sticky="e")
 ent_balance.grid(row=0, column=1)
 
 # Bind the <Return> event to the ent_age Entry widget
-ent_balance.bind("<Return>", lambda event: print("Age entered:", ent_age.get()))
+ent_balance.bind("<Return>", lambda event: print("Balance entered:", ent_balance.get()))
 
 # PART 2.7: Question "Does the client's have a personal loan?"
 def personal_loan_checkbox_event():
@@ -244,15 +244,28 @@ month_combobox = customtkinter.CTkOptionMenu(master=root,
 
 month_combobox.place(relx=0.65, rely=0.75, anchor="center")
 
-#     'contact_duration_sec': SLIDER,
-#     'number_of_contacts': SLIDER
+# PART 2.10: Question "How long the contact was (in seconds)?"
+# Create a new frame `contact_duration_form` to contain the Label and Entry widgets
+contact_duration_form = tk.Frame(relief=tk.SUNKEN, borderwidth=3)
+contact_duration_form.place(relx=0.5, rely=0.85, anchor="center")
 
-#     'days_since_last_contact': TEXT
-#     'previous_number_of_contacts': TEXT
+# Create the Label and Entry widgets for the first question
+lbl_contact_duration = tk.Label(master=contact_duration_form, text="How long the contact was (in seconds)?")
+ent_contact_duration = tk.Entry(master=contact_duration_form)
+lbl_contact_duration.grid(row=0, column=0, sticky="e")
+ent_contact_duration.grid(row=0, column=1)
 
-#     'poutcome': OPTION
+# Bind the <Return> event to the ent_age Entry widget
+ent_contact_duration.bind("<Return>", lambda event: print("The duration of contact entered:", ent_contact_duration.get()))
 
+# PART 2.11: Question "How many number of contacts were done?"
+contacts_number_label_text = tk.Label(root, text="How many number of contacts were done?", font=("Helvetica", 16), fg="white", bg="black")
+contacts_number_label_text.place(relx=0.55, rely=0.95, anchor="center")
+def contacts_number_slider_event(value):
+    print(value)
 
+contacts_number_slider = customtkinter.CTkSlider(master=root, from_=0, to=5, command=contacts_number_slider_event)
+contacts_number_slider.place(relx=0.5, rely=1, anchor=tkinter.CENTER)
 
 
 
@@ -290,6 +303,7 @@ def set_text_by_button():
 # Define and configure the button to initiate prediction
 set_up_button = tkinter.Button(root, height=1, width=16, text="Check the client", command=set_text_by_button)
 set_up_button.pack(side="bottom", pady=20)
+# set_up_button.place(relx=0.5, rely=1.0, anchor=tkinter.CENTER)
 
 # Start the main event loop
 root.mainloop()
