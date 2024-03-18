@@ -260,7 +260,7 @@ contact_duration_form = tk.Frame(relief=tk.SUNKEN, borderwidth=2)
 contact_duration_form.place(relx=0.5, rely=0.55, anchor="center")
 
 # Create the Label and Entry widgets for the first question
-lbl_contact_duration = tk.Label(master=contact_duration_form, text="How long the contact was (in sec)?")
+lbl_contact_duration = tk.Label(master=contact_duration_form, text="Length of the contact (in sec):")
 ent_contact_duration = tk.Entry(master=contact_duration_form, width=5)
 lbl_contact_duration.grid(row=0, column=0, sticky="e")
 ent_contact_duration.grid(row=0, column=1)
@@ -268,21 +268,66 @@ ent_contact_duration.grid(row=0, column=1)
 # Bind the <Return> event to the ent_age Entry widget
 ent_contact_duration.bind("<Return>", lambda event: print("The duration of contact entered:", ent_contact_duration.get()))
 
-# PART 2.12: Question "How many number of contacts were done?"
+# PART 2.12: Question "What is the previous outcome of the marketing campaign?"
+# Dictionary to map words to numeric values
+poutcome_dict = {"Failure": 0, "Other": 1, "Success": 2, "Unknown": 3}
+poutcome = customtkinter.StringVar(value="Failure")  # Set initial value
+
+# Callback function for day combobox
+def poutcome_callback(choice):
+    numeric_poutcome = poutcome_dict[choice]  # Get numeric value from the dictionary
+    print("Numeric day:", numeric_poutcome)
+
+# Creating day combobox
+poutcome_combobox = customtkinter.CTkOptionMenu(master=root,
+                                       fg_color=("black"),
+                                       bg_color=("black"),
+                                       values=["Failure", "Other", "Success", "Unknown"],
+                                       command=poutcome_callback,
+                                       variable=poutcome)
+
+# Placing day combobox
+poutcome_combobox.place(relx=0.8, rely=0.55, anchor="center")
+
+
+# PART 2.12: Question "How many number of contacts were done in this campaign?"
 contact_number_form = tk.Frame(relief=tk.SUNKEN, borderwidth=2)
-contact_number_form.place(relx=0.3, rely=0.65, anchor="center")
+contact_number_form.place(relx=0.23, rely=0.65, anchor="center")
 
 # Create the Label and Entry widgets for the first question
-lbl_contact_number = tk.Label(master=contact_number_form, text="How many number of contacts were done?")
+lbl_contact_number = tk.Label(master=contact_number_form, text="Contact numbers were done now:")
 ent_contact_number = tk.Entry(master=contact_number_form, width=5)
 lbl_contact_number.grid(row=0, column=0, sticky="e")
 ent_contact_number.grid(row=0, column=1)
 
 # Bind the <Return> event to the ent_age Entry widget
-ent_contact_number.bind("<Return>", lambda event: print("The duration of contact entered:", ent_contact_number.get()))
+ent_contact_number.bind("<Return>", lambda event: print("Contact numbers were done now::", ent_contact_number.get()))
 
+# PART 2.13: Question "How many number of contacts were done in the previous campaign?"
+previous_contact_number_form = tk.Frame(relief=tk.SUNKEN, borderwidth=2)
+previous_contact_number_form.place(relx=0.73, rely=0.65, anchor="center")
 
+# Create the Label and Entry widgets for the first question
+lbl_previous_contact_number = tk.Label(master=previous_contact_number_form, text="Contact numbers were done in p_campaign:")
+ent_previous_contact_number = tk.Entry(master=previous_contact_number_form, width=5)
+lbl_previous_contact_number.grid(row=0, column=0, sticky="e")
+ent_previous_contact_number.grid(row=0, column=1)
 
+# Bind the <Return> event to the ent_age Entry widget
+ent_previous_contact_number.bind("<Return>", lambda event: print("Contact numbers were done in p_campaign:", ent_previous_contact_number.get()))
+
+# PART 2.14: Question "How many days that passed by after the client was last contacted?"
+last_contact_days_form = tk.Frame(relief=tk.SUNKEN, borderwidth=2)
+last_contact_days_form.place(relx=0.5, rely=0.8, anchor="center")
+
+# Create the Label and Entry widgets for the first question
+lbl_last_contact_days = tk.Label(master=last_contact_days_form, text="How many days passed by after the client was last contacted?")
+ent_last_contact_days = tk.Entry(master=last_contact_days_form, width=5)
+lbl_last_contact_days.grid(row=0, column=0, sticky="e")
+ent_last_contact_days.grid(row=0, column=1)
+
+# Bind the <Return> event to the ent_age Entry widget
+ent_last_contact_days.bind("<Return>", lambda event: print("Number_of_days_since_last_contact:", ent_last_contact_days.get()))
 
 
 
