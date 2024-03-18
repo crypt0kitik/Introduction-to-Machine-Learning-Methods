@@ -1,4 +1,7 @@
+# ------------ PART 1 ------------
+
 # PART 1: Imports, load and test of the model
+# 1.1 imports
 
 # import libraries
 from joblib import load
@@ -11,6 +14,7 @@ import PIL
 from PIL import Image
 from PIL import ImageTk
 
+# 1.2 load and test of the model
 lm = load("logmodel.joblib")
 
 # tester_row = {
@@ -47,6 +51,8 @@ lm = load("logmodel.joblib")
 # print(result)
 # print("-------------------")
 
+# ------------ PART 2 ------------
+
 # PART 2: THE GUI
 # create a window
 customtkinter.set_appearance_mode("dark")
@@ -55,6 +61,9 @@ root.geometry("700x400")
 
 
 # PART 2.1: setting the background image
+# I had a background image but it was too heavy for the app
+# that is why now the whole code for this section is in comments
+
 # open the image
 # image = PIL.Image.open("bg_image.png")
 # background_image = customtkinter.CTkImage(image, size=(1200, 900))
@@ -81,259 +90,365 @@ root.geometry("700x400")
 # resize_image()
 
 # PART 2.2: adding text about the goal of this GUI
-# place text label
-# the main text
+# place the main text label
 text_label = tk.Label(root, text="Let's check whether a customer takes deposit \n Please, fill in data below",
-                      font=("Helvetica", 18), fg="white", bg="black")  # Set background to transparent
+                      font=("Helvetica", 16), fg="black", bg="yellow")  # Set background to transparent
 text_label.place(relx=0.5, rely=0.1, anchor="center")
 
 # PART 2.3: question "How old is the client?"
+
 # Create a new frame `age_form` to contain the Label and Entry widgets
 age_form = tk.Frame(relief=tk.SUNKEN, borderwidth=2)
-age_form.place(relx=0.2, rely=0.25, anchor="center")
+# Place the age_form frame in the window
+age_form.place(relx=0.18, rely=0.25, anchor="center")
 
-# Create the Label and Entry widgets for the first question
+# Create the Label widget for asking the age question
 lbl_age = tk.Label(master=age_form, text="How old is the client?")
+# Create the Entry widget for entering the age
 ent_age = tk.Entry(master=age_form, width=5)
+# Position the label and entry widgets inside the frame using grid layout
 lbl_age.grid(row=0, column=0, sticky="e")
 ent_age.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_age Entry widget
+# Bind the <Return> event to the ent_age Entry widget to handle when Enter key is pressed
 ent_age.bind("<Return>", lambda event: print("Age entered:", ent_age.get()))
 
-# PART 2.3: Choose a client's marital status
-# marital_label_text = tk.Label(root, text="Choose marital status", font=("Helvetica", 16), fg="white", bg="black")
-# marital_label_text.place(relx=0.35, rely=0.35, anchor="center")
-marital_status_dict = {"divorced": 1, "married": 2, "single": 3}  # to have numbers instead of the string input
-marital_status = customtkinter.StringVar(value="divorced")  # set the initial value
 
+# PART 2.4: Choose a client's marital status
+
+# Dictionary mapping marital status strings to numeric values
+marital_status_dict = {"divorced": 1, "married": 2, "single": 3}
+
+# Set the initial value of marital status
+marital_status = customtkinter.StringVar(value="divorced")
+
+# Callback function for when marital status is selected
 def marital_status_callback(selected_status):
-    numeric_marital_status = marital_status_dict[selected_status]  # getting the number from the dictionare
+    # Retrieve the numeric value of the selected marital status from the dictionary
+    numeric_marital_status = marital_status_dict[selected_status]
+    # Print the numeric marital status
     print("Numeric marital status:", numeric_marital_status)
 
+# Create a dropdown menu for selecting marital status
 marital_combobox = customtkinter.CTkOptionMenu(master=root,
-                                       fg_color=("black"),
-                                       bg_color=("black"),
-                                       values=["divorced", "married", "single"],
-                                       command=marital_status_callback,
-                                       variable=marital_status)
+                                               fg_color=("black"),
+                                               bg_color=("black"),
+                                               values=["divorced", "married", "single"],
+                                               command=marital_status_callback,
+                                               variable=marital_status)
 
-marital_combobox.place(relx=0.5, rely=0.25, anchor="center")
+# Place the marital status dropdown menu on the window
+marital_combobox.place(relx=0.44, rely=0.25, anchor="center")
 
 
-
-
-# PART 2.4:Choose a client's education
-# edu_label_text = tk.Label(root, text="Choose education level", font=("Helvetica", 16), fg="white", bg="black")
-# edu_label_text.place(relx=0.65, rely=0.35, anchor="center")
-# Dictionary to map words to numeric values
+# PART 2.5:Choose a client's education
+# Dictionary to map words to numeric values for education levels
 education_dict = {"primary": 1, "secondary": 2, "tertiary": 3, "unknown": 4}
-education = customtkinter.StringVar(value="primary")  # Set initial value
 
-# Callback function for education combobox
+# Set initial value for education level
+education = customtkinter.StringVar(value="primary")
+
+# Callback function for when an education level is selected
 def education_callback(choice):
-    numeric_education = education_dict[choice]  # Get numeric value from the dictionary
+    # Retrieve the numeric value of the selected education level from the dictionary
+    numeric_education = education_dict[choice]
+    # Print the numeric education level
     print("Numeric education choice:", numeric_education)
 
-# Creating education combobox
+# Create the education combobox
 education_combobox = customtkinter.CTkOptionMenu(master=root,
-                                       fg_color=("black"),
-                                       bg_color=("black"),
-                                       values=["primary", "secondary", "tertiary", "unknown"],
-                                       command=education_callback,
-                                       variable=education)
+                                                 fg_color=("black"),
+                                                 bg_color=("black"),
+                                                 values=["primary", "secondary", "tertiary", "unknown"],
+                                                 command=education_callback,
+                                                 variable=education)
 
-# Placing education combobox
-education_combobox.place(relx=0.8, rely=0.25, anchor="center")
+# Place the education combobox on the window
+education_combobox.place(relx=0.65, rely=0.25, anchor="center")
 
-# PART 2.4: Click "yes", if the client has deposit default
+# PART 2.5: Choose a client's job
+# Dictionary to map job titles to numeric values
+job_dict = {"admin": 0, "blue-collar": 1, "entrepreneur": 2, "housemaid": 3, "management": 4,
+            "retired": 5, "self-employed": 6, "services": 7, "student": 8, "technician": 9,
+            "unemployed": 10, "unknown": 11}
+
+# Set initial value for job
+job = customtkinter.StringVar(value="entrepreneur")
+
+# Callback function for when a job is selected
+def job_callback(choice):
+    # Retrieve the numeric value of the selected job from the dictionary
+    numeric_job = job_dict[choice]
+    # Print the numeric job value
+    print("Numeric job choice:", numeric_job)
+
+# Create the job combobox
+job_combobox = customtkinter.CTkOptionMenu(master=root,
+                                           fg_color=("black"),
+                                           bg_color=("black"),
+                                           values=["admin", "blue-collar", "entrepreneur", "housemaid",
+                                                   "management", "retired", "self-employed", "services",
+                                                   "student", "technician", "unemployed", "unknown"],
+                                           command=job_callback,
+                                           variable=job)
+
+# Place the job combobox on the window
+job_combobox.place(relx=0.86, rely=0.25, anchor="center")
+
+# PART 2.6: Click "yes", if the client has deposit default
+# Define a function to handle the default checkbox event
 def default_checkbox_event():
-    print("Deposit default value:", default_check_var.get())
+    # Print the deposit default value when the checkbox state changes
+    print("Deposit default value:", default_check.get())
 
-default_check_var = customtkinter.StringVar(value="on")
-default_checkbox = customtkinter.CTkCheckBox(root, text="Client has deposit default", command=default_checkbox_event,
-                                     variable=default_check_var, onvalue="1", offvalue="0")
+# Set initial value for default checkbox (0 for off)
+default_check = customtkinter.StringVar(value="0")
 
+# Create the default checkbox widget
+default_checkbox = customtkinter.CTkCheckBox(root,
+                                             text="Client has deposit default",
+                                             command=default_checkbox_event,
+                                             variable=default_check,
+                                             onvalue="1",  # Value when checkbox is checked
+                                             offvalue="0")  # Value when checkbox is unchecked
+
+# Place the default checkbox widget on the window
 default_checkbox.place(relx=0.2, rely=0.35, anchor="center")
 
-# PART 2.5: Click "yes", if the client has housing loan
+# PART 2.7: Click "yes", if the client has housing loan
+# Define a function to handle the housing checkbox event
 def housing_checkbox_event():
-    print("Housing loan value:", housing_check_var.get())
+    # Print the housing loan value when the checkbox state changes
+    print("Housing loan value:", housing_check.get())
 
-housing_check_var = customtkinter.StringVar(value="on")
-housing_checkbox = customtkinter.CTkCheckBox(root, text="Client has housing loan", command=housing_checkbox_event,
-                                     variable=housing_check_var, onvalue="1", offvalue="0")
+# Set initial value for housing checkbox (0 for off)
+housing_check = customtkinter.StringVar(value="0")
 
+# Create the housing checkbox widget
+housing_checkbox = customtkinter.CTkCheckBox(root,
+                                             text="Client has housing loan",
+                                             command=housing_checkbox_event,
+                                             variable=housing_check,
+                                             onvalue="1",  # Value when checkbox is checked
+                                             offvalue="0")  # Value when checkbox is unchecked
+
+# Place the housing checkbox widget on the window
 housing_checkbox.place(relx=0.5, rely=0.35, anchor="center")
 
-# PART 2.6: Question "What is the client's balance?"
+# PART 2.8: Question "What is the client's balance?"
 # Create a new frame `balance_form` to contain the Label and Entry widgets
 balance_form = tk.Frame(relief=tk.SUNKEN, borderwidth=2)
+# Place the balance_form frame in the window
 balance_form.place(relx=0.8, rely=0.35, anchor="center")
 
-# Create the Label and Entry widgets for the first question
+# Create the Label widget for asking the balance question
 lbl_balance = tk.Label(master=balance_form, text="What is the balance?")
+# Create the Entry widget for entering the balance
 ent_balance = tk.Entry(master=balance_form, width=5)
+# Position the label and entry widgets inside the frame using grid layout
 lbl_balance.grid(row=0, column=0, sticky="e")
 ent_balance.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_age Entry widget
+# Bind the <Return> event to the ent_balance Entry widget to handle when Enter key is pressed
 ent_balance.bind("<Return>", lambda event: print("Balance entered:", ent_balance.get()))
 
-# PART 2.7: Question "Does the client's have a personal loan?"
+# PART 2.9: Question "Does the client's have a personal loan?"
+# Define a function to handle the personal loan checkbox event
 def personal_loan_checkbox_event():
-    print("Personal loan value:", personal_loan_check_var.get())
+    # Print the personal loan value when the checkbox state changes
+    print("Personal loan value:", personal_loan_check.get())
 
-personal_loan_check_var = customtkinter.StringVar(value="on")
-personal_loan_checkbox = customtkinter.CTkCheckBox(root, text="Client has personal loan", command=personal_loan_checkbox_event,
-                                     variable=personal_loan_check_var, onvalue="1", offvalue="0")
+# Set initial value for personal loan checkbox (0 for off)
+personal_loan_check = customtkinter.StringVar(value="0")
 
+# Create the personal loan checkbox widget
+personal_loan_checkbox = customtkinter.CTkCheckBox(root,
+                                                    text="Client has personal loan",
+                                                    command=personal_loan_checkbox_event,
+                                                    variable=personal_loan_check,
+                                                    onvalue="1",  # Value when checkbox is checked
+                                                    offvalue="0")  # Value when checkbox is unchecked
+
+# Place the personal loan checkbox widget on the window
 personal_loan_checkbox.place(relx=0.19, rely=0.45, anchor="center")
 
-# PART 2.8: Question "What was the contact method?"
-# Dictionary to map words to numeric values
+# PART 2.10: Question "What was the contact method?"
+# Dictionary to map contact methods to numeric values
 contact_method_dict = {"cellular": 1, "telephone": 2, "unknown": 3}
-contact_method = customtkinter.StringVar(value="telephone")  # Set initial value
 
-# Callback function for contact method combobox
+# Set initial value for contact method
+contact_method = customtkinter.StringVar(value="telephone")
+
+# Callback function for when a contact method is selected
 def contact_method_callback(choice):
-    numeric_contact_method = contact_method_dict[choice]  # Get numeric value from the dictionary
+    # Retrieve the numeric value of the selected contact method from the dictionary
+    numeric_contact_method = contact_method_dict[choice]
+    # Print the numeric contact method value
     print("Numeric contact method choice:", numeric_contact_method)
 
-# Creating contact method combobox
+# Create the contact method combobox
 contact_method_combobox = customtkinter.CTkOptionMenu(master=root,
-                                       fg_color=("black"),
-                                       bg_color=("black"),
-                                       values=["cellular", "telephone", "unknown"],
-                                       command=contact_method_callback,
-                                       variable=contact_method)
+                                                     fg_color=("black"),
+                                                     bg_color=("black"),
+                                                     values=["cellular", "telephone", "unknown"],
+                                                     command=contact_method_callback,
+                                                     variable=contact_method)
 
-# Placing contact method combobox
+# Place the contact method combobox on the window
 contact_method_combobox.place(relx=0.5, rely=0.45, anchor="center")
 
-# PART 2.9: Question "What a day it was?"
-# Dictionary to map words to numeric values
+# PART 2.11: Question "What a day it was?"
+# Dictionary to map days of the week to numeric values
 day_dict = {"Monday": 1, "Tuesday": 2, "Wednesday": 3, "Thursday": 4, "Friday": 5, "Saturday": 6, "Sunday": 7}
-day = customtkinter.StringVar(value="Monday")  # Set initial value
 
-# Callback function for day combobox
+# Set initial value for day
+day = customtkinter.StringVar(value="Monday")
+
+# Callback function for when a day is selected
 def day_callback(choice):
-    numeric_day = day_dict[choice]  # Get numeric value from the dictionary
+    # Retrieve the numeric value of the selected day from the dictionary
+    numeric_day = day_dict[choice]
+    # Print the numeric day value
     print("Numeric day:", numeric_day)
 
-# Creating day combobox
+# Create the day combobox
 day_combobox = customtkinter.CTkOptionMenu(master=root,
-                                       fg_color=("black"),
-                                       bg_color=("black"),
-                                       values=["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                                       command=day_callback,
-                                       variable=day)
+                                           fg_color=("black"),
+                                           bg_color=("black"),
+                                           values=["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                                           command=day_callback,
+                                           variable=day)
 
-# Placing day combobox
+# Place the day combobox on the window
 day_combobox.place(relx=0.8, rely=0.45, anchor="center")
 
+# PART 2.12: Question "What a month it was?"
+# Set initial value for month
+month = customtkinter.StringVar(value="January")
 
-# PART 2.10: Question "What a month it was?"
-month = customtkinter.StringVar(value="January")  # set initial value
-# convert the choice to numeric
-def convert_to_numeric(choisen_month):
+# Function to convert month name to its numeric value
+def convert_to_numeric(chosen_month):
+    # List of months in order
     months = ["January", "February", "March", "April", "May", "June", "July",
               "August", "September", "October", "November", "December"]
-    return months.index(choisen_month) + 1
+    # Return the index of the chosen month plus 1 (to match numeric representation)
+    return months.index(chosen_month) + 1
+
+# Callback function for when a month is selected
 def month_callback(choice):
+    # Convert the chosen month to its numeric value
     numeric_month = convert_to_numeric(choice)
+    # Print the numeric month value
     print("Numeric month:", numeric_month)
 
+# Create the month combobox
 month_combobox = customtkinter.CTkOptionMenu(master=root,
-                                       fg_color=("black"),
-                                       bg_color=("black"),
-                                       values=["January", "February", "March", "April", "May", "June", "July",
-                                               "August", "September", "October", "November", "December"],
-                                       command=month_callback,
-                                       variable=month)
+                                             fg_color=("black"),
+                                             bg_color=("black"),
+                                             values=["January", "February", "March", "April", "May", "June", "July",
+                                                     "August", "September", "October", "November", "December"],
+                                             command=month_callback,
+                                             variable=month)
 
+# Place the month combobox on the window
 month_combobox.place(relx=0.19, rely=0.55, anchor="center")
 
-# PART 2.11: Question "How long the contact was (in seconds)?"
+# PART 2.13: Question "How long the contact was (in seconds)?"
 # Create a new frame `contact_duration_form` to contain the Label and Entry widgets
 contact_duration_form = tk.Frame(relief=tk.SUNKEN, borderwidth=2)
+# Place the contact_duration_form frame in the window
 contact_duration_form.place(relx=0.5, rely=0.55, anchor="center")
 
-# Create the Label and Entry widgets for the first question
+# Create the Label widget for asking the duration of contact question
 lbl_contact_duration = tk.Label(master=contact_duration_form, text="Length of the contact (in sec):")
+# Create the Entry widget for entering the duration of contact
 ent_contact_duration = tk.Entry(master=contact_duration_form, width=5)
+# Position the label and entry widgets inside the frame using grid layout
 lbl_contact_duration.grid(row=0, column=0, sticky="e")
 ent_contact_duration.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_age Entry widget
+# Bind the <Return> event to the ent_contact_duration Entry widget to handle when Enter key is pressed
 ent_contact_duration.bind("<Return>", lambda event: print("The duration of contact entered:", ent_contact_duration.get()))
 
-# PART 2.12: Question "What is the previous outcome of the marketing campaign?"
-# Dictionary to map words to numeric values
+# PART 2.13: Question "What is the previous outcome of the marketing campaign?"
+# Dictionary to map outcomes of a previous marketing campaign to numeric values
 poutcome_dict = {"Failure": 0, "Other": 1, "Success": 2, "Unknown": 3}
-poutcome = customtkinter.StringVar(value="Failure")  # Set initial value
 
-# Callback function for day combobox
+# Set initial value for poutcome
+poutcome = customtkinter.StringVar(value="Failure")
+
+# Callback function for when an outcome is selected
 def poutcome_callback(choice):
-    numeric_poutcome = poutcome_dict[choice]  # Get numeric value from the dictionary
-    print("Numeric day:", numeric_poutcome)
+    # Retrieve the numeric value of the selected outcome from the dictionary
+    numeric_poutcome = poutcome_dict[choice]
+    # Print the numeric outcome value
+    print("Numeric outcome:", numeric_poutcome)
 
-# Creating day combobox
+# Create the outcome combobox
 poutcome_combobox = customtkinter.CTkOptionMenu(master=root,
-                                       fg_color=("black"),
-                                       bg_color=("black"),
-                                       values=["Failure", "Other", "Success", "Unknown"],
-                                       command=poutcome_callback,
-                                       variable=poutcome)
+                                                fg_color=("black"),
+                                                bg_color=("black"),
+                                                values=["Failure", "Other", "Success", "Unknown"],
+                                                command=poutcome_callback,
+                                                variable=poutcome)
 
-# Placing day combobox
+# Place the outcome combobox on the window
 poutcome_combobox.place(relx=0.8, rely=0.55, anchor="center")
 
-
-# PART 2.12: Question "How many number of contacts were done in this campaign?"
+# PART 2.15: Question "How many number of contacts were done in this campaign?"
+# Create a new frame `contact_number_form` to contain the Label and Entry widgets
 contact_number_form = tk.Frame(relief=tk.SUNKEN, borderwidth=2)
+# Place the contact_number_form frame in the window
 contact_number_form.place(relx=0.23, rely=0.65, anchor="center")
 
-# Create the Label and Entry widgets for the first question
+# Create the Label widget for asking the question about the number of contact numbers done
 lbl_contact_number = tk.Label(master=contact_number_form, text="Contact numbers were done now:")
+# Create the Entry widget for entering the number of contact numbers done
 ent_contact_number = tk.Entry(master=contact_number_form, width=5)
+# Position the label and entry widgets inside the frame using grid layout
 lbl_contact_number.grid(row=0, column=0, sticky="e")
 ent_contact_number.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_age Entry widget
-ent_contact_number.bind("<Return>", lambda event: print("Contact numbers were done now::", ent_contact_number.get()))
+# Bind the <Return> event to the ent_contact_number Entry widget to handle when Enter key is pressed
+ent_contact_number.bind("<Return>", lambda event: print("Contact numbers were done now:", ent_contact_number.get()))
 
-# PART 2.13: Question "How many number of contacts were done in the previous campaign?"
+# PART 2.16: Question "How many number of contacts were done in the previous campaign?"
+# Create a new frame `previous_contact_number_form` to contain the Label and Entry widgets
 previous_contact_number_form = tk.Frame(relief=tk.SUNKEN, borderwidth=2)
+# Place the previous_contact_number_form frame in the window
 previous_contact_number_form.place(relx=0.73, rely=0.65, anchor="center")
 
-# Create the Label and Entry widgets for the first question
+# Create the Label widget for asking the question about the number of contact numbers done in the previous campaign
 lbl_previous_contact_number = tk.Label(master=previous_contact_number_form, text="Contact numbers were done in p_campaign:")
+# Create the Entry widget for entering the number of contact numbers done in the previous campaign
 ent_previous_contact_number = tk.Entry(master=previous_contact_number_form, width=5)
+# Position the label and entry widgets inside the frame using grid layout
 lbl_previous_contact_number.grid(row=0, column=0, sticky="e")
 ent_previous_contact_number.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_age Entry widget
+# Bind the <Return> event to the ent_previous_contact_number Entry widget to handle when Enter key is pressed
 ent_previous_contact_number.bind("<Return>", lambda event: print("Contact numbers were done in p_campaign:", ent_previous_contact_number.get()))
 
-# PART 2.14: Question "How many days that passed by after the client was last contacted?"
+# PART 2.17: Question "How many days that passed by after the client was last contacted?"
+# Create a new frame `last_contact_days_form` to contain the Label and Entry widgets
 last_contact_days_form = tk.Frame(relief=tk.SUNKEN, borderwidth=2)
+# Place the last_contact_days_form frame in the window
 last_contact_days_form.place(relx=0.5, rely=0.8, anchor="center")
 
-# Create the Label and Entry widgets for the first question
+# Create the Label widget for asking the question about the number of days since the last contact
 lbl_last_contact_days = tk.Label(master=last_contact_days_form, text="How many days passed by after the client was last contacted?")
+# Create the Entry widget for entering the number of days since the last contact
 ent_last_contact_days = tk.Entry(master=last_contact_days_form, width=5)
+# Position the label and entry widgets inside the frame using grid layout
 lbl_last_contact_days.grid(row=0, column=0, sticky="e")
 ent_last_contact_days.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_age Entry widget
+# Bind the <Return> event to the ent_last_contact_days Entry widget to handle when Enter key is pressed
 ent_last_contact_days.bind("<Return>", lambda event: print("Number_of_days_since_last_contact:", ent_last_contact_days.get()))
 
+# ------------ PART 3 ------------
 
-
-
-
-
+# PART 3: Collecting user responses and making predictions
 # Function for collecting user responses and making predictions
 def set_text_by_button():
     # Collect user data
@@ -345,26 +460,21 @@ def set_text_by_button():
     # Create a DataFrame with user responses
     user_data = {
         'age': [age],
+        'job': [job],
         'marital': [marital_status],
         'education': [education],
-        'age': 25,
-        #     'job': 2,
-        #     'marital': 1,
-        #     'education': 2,
-        #     'failed_previous_credit': 1,
-        #     'balance': 5000,
-        #     'housing_loan': 0,
-        #     'loan': 0,
-        #     'contact_type': 1,
-        #     'day': 5,
-        #     'month': 2,
-        #     'contact_duration_sec': 120,
-        #     'number_of_contacts': 1,
-        #     'days_since_last_contact': -1,
-        #     'previous_number_of_contacts': 0,
-        #     'poutcome': 3,
-
-
+        'failed_previous_credit': [default_check],
+        'balance': [balance],
+        'housing_loan': [housing_check],
+        'loan': [personal_loan_check],
+        'contact_type': [contact_method],
+        'day': [day],
+        'month': [month],
+        'contact_duration_sec': [contact_duration],
+        'number_of_contacts': [contact_number],
+        'days_since_last_contact': [last_contact_days],
+        'previous_number_of_contacts': [previous_contact_number],
+        'poutcome': [poutcome],
     }
     user_df = pd.DataFrame(user_data)
 
