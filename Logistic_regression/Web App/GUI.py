@@ -347,7 +347,24 @@ def set_text_by_button():
         'age': [age],
         'marital': [marital_status],
         'education': [education],
-        # Other client characteristics...
+        'age': 25,
+        #     'job': 2,
+        #     'marital': 1,
+        #     'education': 2,
+        #     'failed_previous_credit': 1,
+        #     'balance': 5000,
+        #     'housing_loan': 0,
+        #     'loan': 0,
+        #     'contact_type': 1,
+        #     'day': 5,
+        #     'month': 2,
+        #     'contact_duration_sec': 120,
+        #     'number_of_contacts': 1,
+        #     'days_since_last_contact': -1,
+        #     'previous_number_of_contacts': 0,
+        #     'poutcome': 3,
+
+
     }
     user_df = pd.DataFrame(user_data)
 
