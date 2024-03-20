@@ -1,3 +1,6 @@
+Logistic Regression --> SVC
+Linear Regression --> SVR
+
 About the Linear Regression project
 
 --> Originally I had a dataset that contained top IMDB movies updated till 15 Dec 2023. This file in the csv fromat and it contains 11 columns namely: Moive Name, Rating, Votes, Meta Score, Genre, PG Rating, Year, Duration, Cast, Director. The data has 1950 row
