@@ -1,5 +1,6 @@
 This project is ongoing in real-time. I am currently working on it.
 
+---------- ML ----------
 
 The cleaning data part:
 1. Check all NaN values --> delete if there are 
@@ -25,5 +26,31 @@ Logistic regression part:
 19. Saving a trained scikit-learn model into a file
 20. Analysis
 
+---------- GUI ----------
+
 GUI (Graphical User Interface):
-1. Imports, load and test of the model
+PART 1: imports and load of the model
+1.1 Imports
+1.2 load and test of the model
+
+PART 2: placing questions
+2.1 Setting the background image
+2.2 Adding text about the goal of this GUI
+2.3: Question "How old is the client?"
+2.4: Choose a client's marital status
+2.5: Choose a client's job
+2.6: Click "yes", if the client has deposit default
+2.7: Click "yes", if the client has housing loan
+2.8: Question "What is the client's balance?"
+2.9: Question "Does the client's have a personal loan?"
+2.10: Question "What was the contact method?"
+2.11: Question "What a day it was?"
+2.12: Question "What a month it was?"
+2.13 Question "How long the contact was (in seconds)?"
+2.14: Question "What is the previous outcome of the marketing campaign?"
+2.15: Question "How many number of contacts were done in this campaign?"
+2.16: Question "How many number of contacts were done in the previous campaign?"
+2.17: Question "How many days that passed by after the client was last contacted?"
+
+PART 3: making predictions
+3.1 Collecting user responses and making predictions
