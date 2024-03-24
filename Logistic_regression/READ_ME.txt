@@ -1,6 +1,6 @@
-This project is ongoing in real-time. I am currently working on it.
+This project contains 2 parts: Logistic Regression and GUI
 
----------- ML ----------
+---------- Data Analytics + ML ----------
 
 The cleaning data part:
 1. Check all NaN values --> delete if there are 
@@ -51,6 +51,12 @@ PART 2: placing questions
 2.15: Question "How many number of contacts were done in this campaign?"
 2.16: Question "How many number of contacts were done in the previous campaign?"
 2.17: Question "How many days that passed by after the client was last contacted?"
+2.18: Showing text that states "Waiting for user input..."
 
-PART 3: making predictions
-3.1 Collecting user responses and making predictions
+PART 3: Collecting user responses and making predictions
+3.1: Converting all values to int and name them
+3.2: Converting the user input into the format that the model understands
+3.3: Converting to pandas-format
+3.4: Making prediction using logistic regression
+3.5: Displaying the prediction result
+3.6: Defining and configuring the button to initiate prediction
