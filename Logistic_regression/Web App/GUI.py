@@ -96,7 +96,6 @@ text_label = tk.Label(root, text="Let's check whether a customer takes deposit \
 text_label.place(relx=0.5, rely=0.1, anchor="center")
 
 # PART 2.3: question "How old is the client?"
-
 # Create a new frame `age_form` to contain the Label and Entry widgets
 age_form = tk.Frame(relief=tk.SUNKEN, borderwidth=2)
 # Place the age_form frame in the window
@@ -110,12 +109,23 @@ ent_age = tk.Entry(master=age_form, width=5)
 lbl_age.grid(row=0, column=0, sticky="e")
 ent_age.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_age Entry widget to handle when Enter key is pressed
-ent_age.bind("<Return>", lambda event: print("Age entered:", ent_age.get()))
+# Function to handle when Enter key is pressed
+def handle_enter(event):
+    age_value = ent_age.get()  # Get the value entered
+    if not age_value:  # If the value is empty
+        age_value = 0  # Set default value to 0
+    else:
+        try:
+            age_value = int(age_value)  # Try converting to integer
+        except ValueError:
+            print("Error: Please enter a valid age (numeric value).")
+            return  # Exit the function if value is not a number
+    print("Age entered:", age_value)
 
+# Bind the <Return> event to the ent_age Entry widget
+ent_age.bind("<Return>", handle_enter)
 
 # PART 2.4: Choose a client's marital status
-
 # Dictionary mapping marital status strings to numeric values
 marital_status_dict = {"divorced": 1, "married": 2, "single": 3}
 
@@ -257,8 +267,21 @@ ent_balance = tk.Entry(master=balance_form, width=5)
 lbl_balance.grid(row=0, column=0, sticky="e")
 ent_balance.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_balance Entry widget to handle when Enter key is pressed
-ent_balance.bind("<Return>", lambda event: print("Balance entered:", ent_balance.get()))
+# Function to handle when Enter key is pressed
+def handle_enter(event):
+    balance_value = ent_balance.get()  # Get the value entered
+    if not balance_value:  # If the value is empty
+        balance_value = 0  # Set default value to 0
+    else:
+        try:
+            balance_value = float(balance_value)  # Try converting to float
+        except ValueError:
+            print("Error: Please enter a valid balance (numeric value).")
+            return  # Exit the function if value is not a number
+    print("Balance entered:", balance_value)
+
+# Bind the <Return> event to the ent_balance Entry widget
+ent_balance.bind("<Return>", handle_enter)
 
 # PART 2.9: Question "Does the client's have a personal loan?"
 # Define a function to handle the personal loan checkbox event
@@ -384,8 +407,21 @@ ent_contact_duration = tk.Entry(master=contact_duration_form, width=5)
 lbl_contact_duration.grid(row=0, column=0, sticky="e")
 ent_contact_duration.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_contact_duration Entry widget to handle when Enter key is pressed
-ent_contact_duration.bind("<Return>", lambda event: print("The duration of contact entered:", ent_contact_duration.get()))
+# Function to handle when Enter key is pressed
+def handle_enter(event):
+    duration_value = ent_contact_duration.get()  # Get the value entered
+    if not duration_value:  # If the value is empty
+        duration_value = 0  # Set default value to 0
+    else:
+        try:
+            duration_value = int(duration_value)  # Try converting to integer
+        except ValueError:
+            print("Error: Please enter a valid duration (numeric value).")
+            return  # Exit the function if value is not a number
+    print("Duration of contact entered:", duration_value)
+
+# Bind the <Return> event to the ent_contact_duration Entry widget
+ent_contact_duration.bind("<Return>", handle_enter)
 
 # PART 2.14: Question "What is the previous outcome of the marketing campaign?"
 # Dictionary to map outcomes of a previous marketing campaign to numeric values
@@ -429,8 +465,21 @@ ent_contact_number = tk.Entry(master=contact_number_form, width=5)
 lbl_contact_number.grid(row=0, column=0, sticky="e")
 ent_contact_number.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_contact_number Entry widget to handle when Enter key is pressed
-ent_contact_number.bind("<Return>", lambda event: print("Contact numbers were done now:", ent_contact_number.get()))
+# Function to handle when Enter key is pressed
+def handle_enter(event):
+    contact_number_value = ent_contact_number.get()  # Get the value entered
+    if not contact_number_value:  # If the value is empty
+        contact_number_value = 0  # Set default value to 0
+    else:
+        try:
+            contact_number_value = int(contact_number_value)  # Try converting to integer
+        except ValueError:
+            print("Error: Please enter a valid number of contact numbers (numeric value).")
+            return  # Exit the function if value is not a number
+    print("Contact numbers were done now:", contact_number_value)
+
+# Bind the <Return> event to the ent_contact_number Entry widget
+ent_contact_number.bind("<Return>", handle_enter)
 
 # PART 2.16: Question "How many number of contacts were done in the previous campaign?"
 # Create a new frame `previous_contact_number_form` to contain the Label and Entry widgets
@@ -442,12 +491,26 @@ previous_contact_number_form.place(relx=0.73, rely=0.65, anchor="center")
 lbl_previous_contact_number = tk.Label(master=previous_contact_number_form, text="Contact numbers were done in p_campaign:")
 # Create the Entry widget for entering the number of contact numbers done in the previous campaign
 ent_previous_contact_number = tk.Entry(master=previous_contact_number_form, width=5)
+
 # Position the label and entry widgets inside the frame using grid layout
 lbl_previous_contact_number.grid(row=0, column=0, sticky="e")
 ent_previous_contact_number.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_previous_contact_number Entry widget to handle when Enter key is pressed
-ent_previous_contact_number.bind("<Return>", lambda event: print("Contact numbers were done in p_campaign:", ent_previous_contact_number.get()))
+# Function to handle when Enter key is pressed
+def handle_enter(event):
+    previous_contact_number_value = ent_previous_contact_number.get()  # Get the value entered
+    if not previous_contact_number_value:  # If the value is empty
+        previous_contact_number_value = 0  # Set default value to 0
+    else:
+        try:
+            previous_contact_number_value = int(previous_contact_number_value)  # Try converting to integer
+        except ValueError:
+            print("Error: Please enter a valid number of contact numbers (numeric value).")
+            return  # Exit the function if value is not a number
+    print("Contact numbers were done in p_campaign:", previous_contact_number_value)
+
+# Bind the <Return> event to the ent_previous_contact_number Entry widget
+ent_previous_contact_number.bind("<Return>", handle_enter)
 
 # PART 2.17: Question "How many days that passed by after the client was last contacted?"
 # Create a new frame `last_contact_days_form` to contain the Label and Entry widgets
@@ -463,11 +526,23 @@ ent_last_contact_days = tk.Entry(master=last_contact_days_form, width=5)
 lbl_last_contact_days.grid(row=0, column=0, sticky="e")
 ent_last_contact_days.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_last_contact_days Entry widget to handle when Enter key is pressed
-ent_last_contact_days.bind("<Return>", lambda event: print("Number_of_days_since_last_contact:", ent_last_contact_days.get()))
+# Function to handle when Enter key is pressed
+def handle_enter(event):
+    last_contact_days_value = ent_last_contact_days.get()  # Get the value entered
+    if not last_contact_days_value:  # If the value is empty
+        last_contact_days_value = 0  # Set default value to 0
+    else:
+        try:
+            last_contact_days_value = int(last_contact_days_value)  # Try converting to integer
+        except ValueError:
+            print("Error: Please enter a valid number of days (numeric value).")
+            return  # Exit the function if value is not a number
+    print("Number of days since last contact:", last_contact_days_value)
 
+# Bind the <Return> event to the ent_last_contact_days Entry widget
+ent_last_contact_days.bind("<Return>", handle_enter)
 
-
+# PART 2.18: showing text that states "Waiting for user input..."
 # make a label for just showing text (the result)
 result_var = tkinter.StringVar()
 label = tkinter.Label(root, textvariable=result_var)
