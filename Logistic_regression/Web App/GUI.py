@@ -96,7 +96,6 @@ text_label = tk.Label(root, text="Let's check whether a customer takes deposit \
 text_label.place(relx=0.5, rely=0.1, anchor="center")
 
 # PART 2.3: question "How old is the client?"
-
 # Create a new frame `age_form` to contain the Label and Entry widgets
 age_form = tk.Frame(relief=tk.SUNKEN, borderwidth=2)
 # Place the age_form frame in the window
@@ -110,17 +109,31 @@ ent_age = tk.Entry(master=age_form, width=5)
 lbl_age.grid(row=0, column=0, sticky="e")
 ent_age.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_age Entry widget to handle when Enter key is pressed
-ent_age.bind("<Return>", lambda event: print("Age entered:", ent_age.get()))
+# Function to handle when Enter key is pressed
+def handle_enter(event):
+    age_value = ent_age.get()  # Get the value entered
+    if not age_value:  # If the value is empty
+        age_value = 0  # Set default value to 0
+    else:
+        try:
+            age_value = int(age_value)  # Try converting to integer
+        except ValueError:
+            print("Error: Please enter a valid age (numeric value).")
+            return  # Exit the function if value is not a number
+    print("Age entered:", age_value)
 
+# Bind the <Return> event to the ent_age Entry widget
+ent_age.bind("<Return>", handle_enter)
 
 # PART 2.4: Choose a client's marital status
-
 # Dictionary mapping marital status strings to numeric values
 marital_status_dict = {"divorced": 1, "married": 2, "single": 3}
 
 # Set the initial value of marital status
 marital_status = customtkinter.StringVar(value="divorced")
+
+# Initializing a variable
+numeric_marital_status = 0
 
 # Callback function for when marital status is selected
 def marital_status_callback(selected_status):
@@ -148,6 +161,8 @@ education_dict = {"primary": 1, "secondary": 2, "tertiary": 3, "unknown": 4}
 # Set initial value for education level
 education = customtkinter.StringVar(value="primary")
 
+# Initializing a variable
+numeric_education = 0
 # Callback function for when an education level is selected
 def education_callback(choice):
     # Retrieve the numeric value of the selected education level from the dictionary
@@ -174,6 +189,9 @@ job_dict = {"admin": 0, "blue-collar": 1, "entrepreneur": 2, "housemaid": 3, "ma
 
 # Set initial value for job
 job = customtkinter.StringVar(value="entrepreneur")
+
+# Initializing a variable
+numeric_job = 0
 
 # Callback function for when a job is selected
 def job_callback(choice):
@@ -249,8 +267,21 @@ ent_balance = tk.Entry(master=balance_form, width=5)
 lbl_balance.grid(row=0, column=0, sticky="e")
 ent_balance.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_balance Entry widget to handle when Enter key is pressed
-ent_balance.bind("<Return>", lambda event: print("Balance entered:", ent_balance.get()))
+# Function to handle when Enter key is pressed
+def handle_enter(event):
+    balance_value = ent_balance.get()  # Get the value entered
+    if not balance_value:  # If the value is empty
+        balance_value = 0  # Set default value to 0
+    else:
+        try:
+            balance_value = float(balance_value)  # Try converting to float
+        except ValueError:
+            print("Error: Please enter a valid balance (numeric value).")
+            return  # Exit the function if value is not a number
+    print("Balance entered:", balance_value)
+
+# Bind the <Return> event to the ent_balance Entry widget
+ent_balance.bind("<Return>", handle_enter)
 
 # PART 2.9: Question "Does the client's have a personal loan?"
 # Define a function to handle the personal loan checkbox event
@@ -279,6 +310,8 @@ contact_method_dict = {"cellular": 1, "telephone": 2, "unknown": 3}
 # Set initial value for contact method
 contact_method = customtkinter.StringVar(value="telephone")
 
+# Initializing a variable
+numeric_contact_method = 0
 # Callback function for when a contact method is selected
 def contact_method_callback(choice):
     # Retrieve the numeric value of the selected contact method from the dictionary
@@ -304,6 +337,9 @@ day_dict = {"Monday": 1, "Tuesday": 2, "Wednesday": 3, "Thursday": 4, "Friday": 
 # Set initial value for day
 day = customtkinter.StringVar(value="Monday")
 
+# Initializing a variable
+numeric_day = 0
+
 # Callback function for when a day is selected
 def day_callback(choice):
     # Retrieve the numeric value of the selected day from the dictionary
@@ -326,6 +362,7 @@ day_combobox.place(relx=0.8, rely=0.45, anchor="center")
 # Set initial value for month
 month = customtkinter.StringVar(value="January")
 
+
 # Function to convert month name to its numeric value
 def convert_to_numeric(chosen_month):
     # List of months in order
@@ -333,6 +370,9 @@ def convert_to_numeric(chosen_month):
               "August", "September", "October", "November", "December"]
     # Return the index of the chosen month plus 1 (to match numeric representation)
     return months.index(chosen_month) + 1
+
+# Initializing a variable
+numeric_month = 0
 
 # Callback function for when a month is selected
 def month_callback(choice):
@@ -367,15 +407,31 @@ ent_contact_duration = tk.Entry(master=contact_duration_form, width=5)
 lbl_contact_duration.grid(row=0, column=0, sticky="e")
 ent_contact_duration.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_contact_duration Entry widget to handle when Enter key is pressed
-ent_contact_duration.bind("<Return>", lambda event: print("The duration of contact entered:", ent_contact_duration.get()))
+# Function to handle when Enter key is pressed
+def handle_enter(event):
+    duration_value = ent_contact_duration.get()  # Get the value entered
+    if not duration_value:  # If the value is empty
+        duration_value = 0  # Set default value to 0
+    else:
+        try:
+            duration_value = int(duration_value)  # Try converting to integer
+        except ValueError:
+            print("Error: Please enter a valid duration (numeric value).")
+            return  # Exit the function if value is not a number
+    print("Duration of contact entered:", duration_value)
 
-# PART 2.13: Question "What is the previous outcome of the marketing campaign?"
+# Bind the <Return> event to the ent_contact_duration Entry widget
+ent_contact_duration.bind("<Return>", handle_enter)
+
+# PART 2.14: Question "What is the previous outcome of the marketing campaign?"
 # Dictionary to map outcomes of a previous marketing campaign to numeric values
 poutcome_dict = {"Failure": 0, "Other": 1, "Success": 2, "Unknown": 3}
 
 # Set initial value for poutcome
 poutcome = customtkinter.StringVar(value="Failure")
+
+# Initializing a variable
+numeric_poutcome = 0
 
 # Callback function for when an outcome is selected
 def poutcome_callback(choice):
@@ -409,8 +465,21 @@ ent_contact_number = tk.Entry(master=contact_number_form, width=5)
 lbl_contact_number.grid(row=0, column=0, sticky="e")
 ent_contact_number.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_contact_number Entry widget to handle when Enter key is pressed
-ent_contact_number.bind("<Return>", lambda event: print("Contact numbers were done now:", ent_contact_number.get()))
+# Function to handle when Enter key is pressed
+def handle_enter(event):
+    contact_number_value = ent_contact_number.get()  # Get the value entered
+    if not contact_number_value:  # If the value is empty
+        contact_number_value = 0  # Set default value to 0
+    else:
+        try:
+            contact_number_value = int(contact_number_value)  # Try converting to integer
+        except ValueError:
+            print("Error: Please enter a valid number of contact numbers (numeric value).")
+            return  # Exit the function if value is not a number
+    print("Contact numbers were done now:", contact_number_value)
+
+# Bind the <Return> event to the ent_contact_number Entry widget
+ent_contact_number.bind("<Return>", handle_enter)
 
 # PART 2.16: Question "How many number of contacts were done in the previous campaign?"
 # Create a new frame `previous_contact_number_form` to contain the Label and Entry widgets
@@ -422,18 +491,32 @@ previous_contact_number_form.place(relx=0.73, rely=0.65, anchor="center")
 lbl_previous_contact_number = tk.Label(master=previous_contact_number_form, text="Contact numbers were done in p_campaign:")
 # Create the Entry widget for entering the number of contact numbers done in the previous campaign
 ent_previous_contact_number = tk.Entry(master=previous_contact_number_form, width=5)
+
 # Position the label and entry widgets inside the frame using grid layout
 lbl_previous_contact_number.grid(row=0, column=0, sticky="e")
 ent_previous_contact_number.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_previous_contact_number Entry widget to handle when Enter key is pressed
-ent_previous_contact_number.bind("<Return>", lambda event: print("Contact numbers were done in p_campaign:", ent_previous_contact_number.get()))
+# Function to handle when Enter key is pressed
+def handle_enter(event):
+    previous_contact_number_value = ent_previous_contact_number.get()  # Get the value entered
+    if not previous_contact_number_value:  # If the value is empty
+        previous_contact_number_value = 0  # Set default value to 0
+    else:
+        try:
+            previous_contact_number_value = int(previous_contact_number_value)  # Try converting to integer
+        except ValueError:
+            print("Error: Please enter a valid number of contact numbers (numeric value).")
+            return  # Exit the function if value is not a number
+    print("Contact numbers were done in p_campaign:", previous_contact_number_value)
+
+# Bind the <Return> event to the ent_previous_contact_number Entry widget
+ent_previous_contact_number.bind("<Return>", handle_enter)
 
 # PART 2.17: Question "How many days that passed by after the client was last contacted?"
 # Create a new frame `last_contact_days_form` to contain the Label and Entry widgets
 last_contact_days_form = tk.Frame(relief=tk.SUNKEN, borderwidth=2)
 # Place the last_contact_days_form frame in the window
-last_contact_days_form.place(relx=0.5, rely=0.8, anchor="center")
+last_contact_days_form.place(relx=0.5, rely=0.75, anchor="center")
 
 # Create the Label widget for asking the question about the number of days since the last contact
 lbl_last_contact_days = tk.Label(master=last_contact_days_form, text="How many days passed by after the client was last contacted?")
@@ -443,54 +526,91 @@ ent_last_contact_days = tk.Entry(master=last_contact_days_form, width=5)
 lbl_last_contact_days.grid(row=0, column=0, sticky="e")
 ent_last_contact_days.grid(row=0, column=1)
 
-# Bind the <Return> event to the ent_last_contact_days Entry widget to handle when Enter key is pressed
-ent_last_contact_days.bind("<Return>", lambda event: print("Number_of_days_since_last_contact:", ent_last_contact_days.get()))
+# Function to handle when Enter key is pressed
+def handle_enter(event):
+    last_contact_days_value = ent_last_contact_days.get()  # Get the value entered
+    if not last_contact_days_value:  # If the value is empty
+        last_contact_days_value = 0  # Set default value to 0
+    else:
+        try:
+            last_contact_days_value = int(last_contact_days_value)  # Try converting to integer
+        except ValueError:
+            print("Error: Please enter a valid number of days (numeric value).")
+            return  # Exit the function if value is not a number
+    print("Number of days since last contact:", last_contact_days_value)
+
+# Bind the <Return> event to the ent_last_contact_days Entry widget
+ent_last_contact_days.bind("<Return>", handle_enter)
+
+# PART 2.18: Showing text that states "Waiting for user input..."
+# make a label for just showing text (the result)
+result_var = tkinter.StringVar()
+label = tkinter.Label(root, textvariable=result_var)
+result_var.set("Waiting for user input...")
+label.place(relx=0.5, rely=0.84, anchor="center")
+
 
 # ------------ PART 3 ------------
 
 # PART 3: Collecting user responses and making predictions
 # Function for collecting user responses and making predictions
+
+# PART 3.1: Converting all values to int and name them
+# the function that is run when button is pressed
 def set_text_by_button():
-    # Collect user data
-    age = int(ent_age.get())
-    marital_status = marital_status.get()
-    education = education.get()
-    # Other client characteristics to collect...
+    row_age = int(ent_age.get())
+    row_job = numeric_job
+    row_marital_status = numeric_marital_status
+    row_education = numeric_education
+    row_default_check = int(default_check.get())
+    row_balance_form = int(ent_balance.get())
+    row_housing_check = int(housing_check.get())
+    row_personal_loan_check = int(personal_loan_check.get())
+    row_contact_method = numeric_contact_method
+    row_day = numeric_day
+    row_month = numeric_month
+    row_contact_duration_form = int(ent_contact_duration.get())
+    row_contact_number_form = int(ent_contact_number.get())
+    row_last_contact_days_form = int(ent_last_contact_days.get())
+    row_previous_contact_number_form = int(ent_previous_contact_number.get())
+    row_poutcome = numeric_poutcome
 
-    # Create a DataFrame with user responses
-    user_data = {
-        'age': [age],
-        'job': [job],
-        'marital': [marital_status],
-        'education': [education],
-        'failed_previous_credit': [default_check],
-        'balance': [balance],
-        'housing_loan': [housing_check],
-        'loan': [personal_loan_check],
-        'contact_type': [contact_method],
-        'day': [day],
-        'month': [month],
-        'contact_duration_sec': [contact_duration],
-        'number_of_contacts': [contact_number],
-        'days_since_last_contact': [last_contact_days],
-        'previous_number_of_contacts': [previous_contact_number],
-        'poutcome': [poutcome],
+    # PART 3.2: Converting the user input into
+    # the format that the model understands
+    tester_row = {
+        'age': row_age,
+        'job': row_job,
+        'marital': row_marital_status,
+        'education': row_education,
+        'failed_previous_credit': row_default_check,
+        'balance': row_balance_form,
+        'housing_loan': row_housing_check,
+        'loan': row_personal_loan_check,
+        'contact_type': row_contact_method,
+        'day': row_day,
+        'month': row_month,
+        'contact_duration_sec': row_contact_duration_form,
+        'number_of_contacts': row_contact_number_form,
+        'days_since_last_contact': row_last_contact_days_form,
+        'previous_number_of_contacts': row_previous_contact_number_form,
+        'poutcome': row_poutcome
     }
-    user_df = pd.DataFrame(user_data)
 
-    # Predict using logistic regression
-    prediction = lm.predict(user_df)
+    # PART 3.3: Converting to pandas-format
+    tester_row = pd.DataFrame([tester_row])
 
-    # Display the prediction result
+    # PART 3.4: Making prediction using logistic regression
+    prediction = lm.predict(tester_row)[0]
+
+    # PART 3.5: Displaying the prediction result
     if prediction == 1:
         result_var.set("This client will take a deposit.")
     else:
         result_var.set("This client will not take a deposit.")
 
-# Define and configure the button to initiate prediction
+# PART 3.6: Defining and configuring the button to initiate prediction
 set_up_button = tkinter.Button(root, height=1, width=16, text="Check the client", command=set_text_by_button)
 set_up_button.pack(side="bottom", pady=20)
-# set_up_button.place(relx=0.5, rely=1.0, anchor=tkinter.CENTER)
 
 # Start the main event loop
 root.mainloop()
