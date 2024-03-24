@@ -1,24 +1,29 @@
-Logistic Regression --> SVC
-Linear Regression --> SVR
+1. Logistic Regression --> SVC
+2. Linear Regression --> SVR
 
-I used these datasets for the linear and logistic regression, but I opted to try SVM as well on these datasets to see if I could achieve better metric results.
+I used these datasets for the linear and logistic regression, but I opted to try SVM as well on these datasets to see if I could achieve better metric results using different methods of optimization.
 
 
-About the Linear Regression project
 
---> Originally I had a dataset that contained top IMDB movies updated till 15 Dec 2023. This file in the csv fromat and it contains 11 columns namely: Moive Name, Rating, Votes, Meta Score, Genre, PG Rating, Year, Duration, Cast, Director. The data has 1950 row
 
---> The Linear regression model answers for the question: what affects more to make a movie to gain more votes and fans?
+1. Logistic Regression --> SVC
 
---> Link for the original dataset: https://www.kaggle.com/datasets/kianindeed/imdb-movie-dataset-dec-2023 
+---------------------------
 
---> Steps in the notebook:
-1. Cleaning and modifying data
-2. Checking the balance of the data
-3. The train/test –split
-4. Training the Linear Regression model
-5. Error and performance metrics
-6. Creating a tester row for metrics
+2. Linear Regression --> SVR
+Comparing the results between linear regression and support vector regression (SVR), we observe the following:
 
---> Web scrapping
-I made web srapping but i did not merge datasets because movies in a new datatset are very new that is why we lack a lot of scores and it results in N/a in many rows. If I had to merge these 2 datasets i would need to clean all Nan values and it could result in a very small new dataset.
+Linear regression results VS SVR results:
+MAE 0.3 VS MAE 0.13 $  
+This indicates that SVR provides more accurate predictions on average.
+
+MSE 0.15 ^2 VS MSE 0.03 $^2  
+SVR demonstrates superior performance in minimizing squared errors.
+
+RMSE 0.38 VS RMSE 0.17  
+SVR provides more precise predictions with smaller root mean squared errors.
+
+R-squared 0.44 VS R-squared 0.48  
+SVR outperforms linear regression with an R-squared value of 0.48, suggesting a better fit to the data.
+
+Overall, SVR consistently outperforms linear regression across all metrics in this comparison.
