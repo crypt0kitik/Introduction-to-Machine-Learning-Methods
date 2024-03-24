@@ -542,7 +542,7 @@ def handle_enter(event):
 # Bind the <Return> event to the ent_last_contact_days Entry widget
 ent_last_contact_days.bind("<Return>", handle_enter)
 
-# PART 2.18: showing text that states "Waiting for user input..."
+# PART 2.18: Showing text that states "Waiting for user input..."
 # make a label for just showing text (the result)
 result_var = tkinter.StringVar()
 label = tkinter.Label(root, textvariable=result_var)
@@ -555,10 +555,9 @@ label.place(relx=0.5, rely=0.84, anchor="center")
 # PART 3: Collecting user responses and making predictions
 # Function for collecting user responses and making predictions
 
-
+# PART 3.1: Converting all values to int and name them
 # the function that is run when button is pressed
 def set_text_by_button():
-    # convert textbox value into integer if possible
     row_age = int(ent_age.get())
     row_job = numeric_job
     row_marital_status = numeric_marital_status
@@ -576,8 +575,8 @@ def set_text_by_button():
     row_previous_contact_number_form = int(ent_previous_contact_number.get())
     row_poutcome = numeric_poutcome
 
-    # let's convert the user input into the
-    # format that our model understands
+    # PART 3.2: Converting the user input into
+    # the format that the model understands
     tester_row = {
         'age': row_age,
         'job': row_job,
@@ -597,24 +596,19 @@ def set_text_by_button():
         'poutcome': row_poutcome
     }
 
-    # convert to pandas-format
+    # PART 3.3: Converting to pandas-format
     tester_row = pd.DataFrame([tester_row])
 
-    # Predict using logistic regression
+    # PART 3.4: Making prediction using logistic regression
     prediction = lm.predict(tester_row)[0]
 
-    # Display the prediction result
+    # PART 3.5: Displaying the prediction result
     if prediction == 1:
         result_var.set("This client will take a deposit.")
     else:
         result_var.set("This client will not take a deposit.")
 
-# helper function that allows us to press Enter to launch
-# the button press function
-def handle_enter(event):
-    set_text_by_button()
-
-# Define and configure the button to initiate prediction
+# PART 3.6: Defining and configuring the button to initiate prediction
 set_up_button = tkinter.Button(root, height=1, width=16, text="Check the client", command=set_text_by_button)
 set_up_button.pack(side="bottom", pady=20)
 
