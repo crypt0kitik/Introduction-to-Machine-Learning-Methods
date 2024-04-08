@@ -27,7 +27,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 
 # 1.2 load and test of the model
-model = load("model.joblib")
+model = load("linear_model.joblib")
 
 tester_row = {
     'title': "Helsinki",
