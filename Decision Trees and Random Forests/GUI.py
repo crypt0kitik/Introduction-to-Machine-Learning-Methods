@@ -23,9 +23,11 @@ import tkinter as tk
 import PIL
 from PIL import Image
 from PIL import ImageTk
+from sklearn.feature_extraction.text import TfidfVectorizer
+import numpy as np
 
 # 1.2 load and test of the model
-lm = load("model.joblib")
+model = load("model.joblib")
 
 tester_row = {
     'title': "Helsinki",
