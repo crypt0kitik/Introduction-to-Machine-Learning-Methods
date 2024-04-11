@@ -1,0 +1,1 @@
+I had an SVC model and wanted to explore potential insights using a decision tree model. However, due to the dataset's size (about 11,000 rows), I couldn't create a decision tree for the entire dataset. Instead, I opted to build a decision tree based on selected features, which I chose by assessing the significance of variables and their correlations.
