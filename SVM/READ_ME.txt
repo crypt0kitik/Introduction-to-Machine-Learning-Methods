@@ -5,7 +5,6 @@ I used these datasets for the linear and logistic regression, but I opted to try
 
 
 
-
 1. Logistic Regression --> SVC
 
 Logistics regression results VS SVC results
